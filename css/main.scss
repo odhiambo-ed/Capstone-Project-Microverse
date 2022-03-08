@@ -31,6 +31,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;    
     position: relative;
+    padding-bottom: 2em;
 
     .navbar {
         height: 50px;
@@ -223,10 +224,9 @@ p {
                                 }                                
                         }                        
                 }
-                .experts-btn {
-                    // margin: 1em auto;
-                    // width: 90%;
+                .experts-btn {                    
                     margin: 2em auto;
+                    overflow: hidden;
                         button {
                             font-family: $myFont;
                             color: $myDark;
@@ -280,15 +280,30 @@ p {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 1em;
+                    margin: 0 auto;
+                    width: 60%;
                         img {
                             width: 100%;
+                            align-self: center;
                         }
                 }
         }
 }
 
 .section-footer {
-    
+    background-color: $myLight;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+        .footer-left {
+            margin: auto 0;
+                img {
+                    width: 100%;
+                }
+        }
+        .footer-right {
+            margin: auto 0;                
+        }
 }
     
    

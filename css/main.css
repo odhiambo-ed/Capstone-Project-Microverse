@@ -19,6 +19,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 2em;
 }
 
 .header-container .navbar {
@@ -280,6 +281,7 @@ p {
 
 .experts .expert-list .experts-btn {
   margin: 2em auto;
+  overflow: hidden;
 }
 
 .experts .expert-list .experts-btn button {
@@ -355,9 +357,35 @@ p {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 1em;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .partners .partners-list .partners-list-row-two img {
   width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-footer {
+  background-color: #f8f9fa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 1em;
+}
+
+.section-footer .footer-left {
+  margin: auto 0;
+}
+
+.section-footer .footer-left img {
+  width: 100%;
+}
+
+.section-footer .footer-right {
+  margin: auto 0;
 }
 /*# sourceMappingURL=main.css.map */
