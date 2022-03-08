@@ -114,16 +114,35 @@ $myLineHeight: 1.5;
           margin: 1em;
             .program-list-items {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin: 15px 0;
+                grid-template-columns: 1fr 1fr 2fr;
+                margin: 0.5em 0;
+                background-color: $myGray700;
                     img {
                         width: 4em;
                         height: 4em;
                         margin: auto 0;
+                        color: $myLight;
+                        padding: 0.3em;
+                        background-repeat: no-repeat;
                     }
                     h2 {
                         color: $myRedColor;
+                        margin: auto 0;
+                        text-align: center;
+                        padding: 0.3em;
                     }
+                    p {
+                        color: $myLight;
+                        padding: 0.3em;
+                    }
+            }
+            .program-btn {
+                margin: 2em auto;
+                background-color: $myRedColor;
+                    button {
+                        font-family: $myFont;
+                        color: $myLight;
+                    }                
             }
       }      
   }

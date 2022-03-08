@@ -135,18 +135,40 @@
 .program .program-list .program-list-items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  margin: 15px 0;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  margin: 0.5em 0;
+  background-color: #495057;
 }
 
 .program .program-list .program-list-items img {
   width: 4em;
   height: 4em;
   margin: auto 0;
+  color: #f8f9fa;
+  padding: 0.3em;
+  background-repeat: no-repeat;
 }
 
 .program .program-list .program-list-items h2 {
   color: #dc3545;
+  margin: auto 0;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.program .program-list .program-list-items p {
+  color: #f8f9fa;
+  padding: 0.3em;
+}
+
+.program .program-list .program-btn {
+  margin: 2em auto;
+  background-color: #dc3545;
+}
+
+.program .program-list .program-btn button {
+  font-family: "Cocogoose", sans-serif;
+  color: #f8f9fa;
 }
 /*# sourceMappingURL=main.css.map */
