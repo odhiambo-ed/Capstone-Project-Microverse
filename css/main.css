@@ -49,8 +49,7 @@ p {
 }
 
 .header-container .header-text {
-  width: 100%;
-  margin: 20px 10px;
+  margin: 1em;
 }
 
 .header-container .header-text h3 {
@@ -72,6 +71,7 @@ p {
   border-radius: 2px;
   width: 90%;
   background: rgba(222, 226, 230, 0.3);
+  margin: 0 auto;
 }
 
 .header-container .header-text .border-text p {
@@ -84,23 +84,22 @@ p {
   margin: 10px;
 }
 
-.header-container .header-text .header-date h1 {
+.header-container .header-text .header-date h2 {
   color: #495057;
   font-family: "Cocogoose", sans-serif;
 }
 
 .header-container .header-text .header-date p {
+  padding-top: 1em;
   color: #495057;
   text-align: left;
 }
 
 .our-program {
-  width: 100%;
   background-color: #272a31;
 }
 
 .our-program .program {
-  width: 100%;
   background-image: url("../images/bg2.png");
   background-color: myDark;
   -o-object-fit: cover;
@@ -387,5 +386,185 @@ p {
 
 .section-footer .footer-right {
   margin: auto 0;
+}
+
+/*******************************************/
+/*******************************************/
+.header-text-about {
+  margin: 20px 10px;
+}
+
+.header-text-about h3 {
+  color: #ec5242;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+}
+
+.header-text-about h1 {
+  color: #ec5242;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.header-text-about .border-text-about {
+  border: 2px solid #d3d3d3;
+  border-radius: 2px;
+  width: 90%;
+  background: #fff;
+  margin: auto 1em;
+}
+
+.header-text-about .border-text-about p {
+  padding: 0.5em;
+  color: #272a31;
+  font-family: "Cocogoose", sans-serif;
+}
+
+.header-text-about .header-end {
+  margin: auto 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.header-text-about .header-end p {
+  color: #272a31;
+  text-align: center;
+}
+
+.about {
+  margin: 1em;
+  padding: 2em 0;
+}
+
+.about .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about-header h3 {
+  color: #272a31;
+  text-align: center;
+}
+
+.about .about-header hr {
+  width: 5%;
+  height: 1px;
+  background-color: #ec5242;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1em;
+}
+
+.about .about-header p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.about .logo-area {
+  padding-top: 1em;
+  margin: 1em auto;
+  border: 0.5px solid #272a31;
+  border-radius: 2px;
+}
+
+.about .logo-area img {
+  width: 100%;
+}
+
+.samples {
+  margin: 1em;
+  padding: 2em 0;
+}
+
+.samples .samples-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.samples .samples-header h3 {
+  color: #272a31;
+  text-align: center;
+}
+
+.samples .samples-header hr {
+  width: 5%;
+  height: 1px;
+  background-color: #ec5242;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1em;
+}
+
+.samples .samples-header p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.samples .samples-work {
+  margin: 1em;
+}
+
+.samples .samples-work .samples-work-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.samples .samples-work .samples-work-items .samples-image-one {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample1.jpg);
+  background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
+  width: 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+
+.samples .samples-work .samples-work-items .samples-image-one h2 {
+  color: #f8f9fa;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 2em;
+}
+
+.samples .samples-work .samples-work-items .samples-image-one p {
+  color: #f8f9fa;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.samples .samples-work .samples-work-items .samples-image-two {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample2.jpg);
+  background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
+  width: 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+
+.samples .samples-work .samples-work-items .samples-image-two h2 {
+  color: #f8f9fa;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 2em;
+}
+
+.samples .samples-work .samples-work-items .samples-image-two p {
+  color: #f8f9fa;
+  text-align: center;
+  padding-bottom: 2em;
 }
 /*# sourceMappingURL=main.css.map */

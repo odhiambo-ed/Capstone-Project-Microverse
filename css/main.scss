@@ -54,9 +54,8 @@ p {
         }
     }
 
-    .header-text {
-        width: 100%;
-        margin: 20px 10px;
+    .header-text {        
+        margin: 1em;
         h3 {
             color: $myRedColor;
             font-family: $myFont;
@@ -74,6 +73,7 @@ p {
             border-radius: 2px;
             width: 90%;
             background: rgba(222, 226, 230, 0.3);
+            margin: 0 auto;
             p {
                 padding: 0.5em;
                 color: $myGray700;
@@ -82,11 +82,12 @@ p {
         }
         .header-date {
             margin: 10px;
-            h1 {
+            h2 {
                 color: $myGray700;
                 font-family: $myFont;
             }
             p {
+                padding-top: 1em;
                 color: $myGray700;                
                 text-align: left;
             }
@@ -94,33 +95,31 @@ p {
     }
   }
 
- .our-program {
-     width: 100%;
+ .our-program {   
      background-color: $myDark;
-     .program {
-        width: 100%;
+     .program {        
         background-image: url('../images/bg2.png');
         background-color: myDark;
         object-fit: cover;
         position: relative;
         background-repeat: no-repeat;
-        .program-header {
-          display: flex;
-          flex-direction: column;
-              h2 {
-                  color: $myLight;
-                  font-family: $myFont;
-                  text-align: center;
-                  padding-top: 20px;
-              }
-              hr {
-                  width: 20%;
-                  height: 2px;
-                  background-color: $myRedColor;
-                  align-self: center;
-                  margin-top: 4px;
-              }
-        }
+            .program-header {
+                display: flex;
+                flex-direction: column;
+                    h2 {
+                        color: $myLight;
+                        font-family: $myFont;
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                    hr {
+                        width: 20%;
+                        height: 2px;
+                        background-color: $myRedColor;
+                        align-self: center;
+                        margin-top: 4px;
+                    }
+            }
         .program-list {
             display: flex;
             flex-direction: column;
@@ -305,6 +304,149 @@ p {
             margin: auto 0;                
         }
 }
+
+/*******************************************/
+//ABOUT PAGE
+/*******************************************/
+
+    .header-text-about {
+        // width: 100%;
+        margin: 20px 10px;
+        h3 {
+            color: $myRedColor;
+            font-family: $myFont;
+            text-align: center;
+        }
+        h1 {
+            color: $myRedColor;
+            font-family: $myFont;
+            text-align: center;
+            padding-top: 0.75em;
+            padding-bottom: 0.75em;
+        }
+        .border-text-about {
+            border: 2px solid $myGray300;
+            border-radius: 2px;
+            width: 90%;
+            background: #fff;
+            margin: auto 1em;
+            p {
+                padding: 0.5em;
+                color: $myDark;
+                font-family: $myFont;
+            }
+        }
+        .header-end {
+            margin: auto 1em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            p {
+                color: $myDark;                
+                text-align: center;
+            }
+        }
+    }
+
+    .about {
+        margin: 1em;
+        padding: 2em 0;
+            .about-header {
+                display: flex;
+                flex-direction: column;
+                    h3 {
+                        color: $myDark;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 5%;
+                        height: 1px;
+                        background-color: $myRedColor;
+                        align-self: center;
+                        margin-top: 1em;
+                     }
+                     p {
+                         margin-top: 1em;
+                         text-align: center;
+                     }
+            }
+            .logo-area {
+                padding-top: 1em;
+                margin: 1em auto;
+                border: 0.5px solid $myDark;                
+                border-radius: 2px;
+                    img {
+                        width: 100%;
+                    }
+
+            }
+    }
+
+    .samples {
+        margin: 1em;
+        padding: 2em 0;
+            .samples-header {
+                display: flex;
+                flex-direction: column;
+                    h3 {
+                        color: $myDark;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 5%;
+                        height: 1px;
+                        background-color: $myRedColor;
+                        align-self: center;
+                        margin-top: 1em;
+                     }
+                     p {
+                         margin-top: 1em;
+                         text-align: center;
+                     }
+            }
+            .samples-work {
+                margin: 1em;
+                    .samples-work-items {
+                        display: grid;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 1em;
+                           .samples-image-one {
+                                background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
+                                width: 100%;
+                                height: 35vh;
+                                background-repeat: no-repeat;
+                                    h2 {    
+                                        color: $myLight;
+                                        text-align: center;
+                                        font-size: 2.5rem;
+                                        padding-top: 2em;
+                                    }
+                                    p {                                       
+                                        color: $myLight;
+                                        text-align: center;
+                                        padding-bottom: 2em;
+                                    }                                
+                           }
+                           .samples-image-two {
+                            background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
+                            width: 100%;
+                            height: 35vh;
+                            background-repeat: no-repeat;
+                                h2 {    
+                                    color: $myLight;
+                                    text-align: center;
+                                    font-size: 2.5rem;
+                                    padding-top: 2em;
+                                }
+                                p {                                       
+                                    color: $myLight;
+                                    text-align: center;
+                                    padding-bottom: 2em;
+                                }                                
+                       }
+                    }
+            }
+    }
+
     
    
 
