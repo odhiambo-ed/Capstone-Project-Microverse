@@ -20,6 +20,10 @@ body {
     position: relative;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 .header-container {
     width: 100%;    
     background: url(../images/bg.jpg);
@@ -82,8 +86,7 @@ body {
                 font-family: $myFont;
             }
             p {
-                color: $myGray700;
-                font-family: $myFont;
+                color: $myGray700;                
                 text-align: left;
             }
         }
@@ -189,8 +192,7 @@ body {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     margin: 1em 0;
-                        .person {
-                            // margin: 1em 1em;  
+                        .person {                              
                             background-image: url(../images/profile2.png);   
                             background-repeat: no-repeat;
                             background-position: top left;
@@ -207,10 +209,86 @@ body {
                                 }
                         }
                         .profile {
+                            margin: auto 0;
                             padding: 1em;
+                            align-items: left;
+                                h2 {                                    
+                                    color: $myDark;
+                                    font-family: $myFont;
+                                }
+                                h3 {
+                                    margin: 0.75em 0;
+                                    color: $myRedColor;
+                                    font-family: $myFont;
+                                }                                
+                        }                        
+                }
+                .experts-btn {
+                    // margin: 1em auto;
+                    // width: 90%;
+                    margin: 2em auto;
+                        button {
+                            font-family: $myFont;
+                            color: $myDark;
+                            background-color: $myLight;
+                            padding: 0.5em 11em;
+                            border: 1px solid $myDark;
+                            border-radius: 2px;
+                            font-size: 15px;
+                                .icon-red {
+                                    color: $myRedColor;
+                                }
+                        }                             
+                }
+        }
+}
+
+.partners {
+    width: 100%;
+    background-color: #000;
+        .partners-header {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color: $myLight;
+                font-family: $myFont;
+                text-align: center;
+                padding-top: 20px;
+            }
+            hr {
+                width: 10%;
+                height: 1px;
+                background-color: $myRedColor;
+                align-self: center;
+                margin-top: 1em;
+            } 
+        }
+        .partners-list {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            margin: 1em 1em 0 1em;
+            padding-bottom: 2em;
+                .partners-list-row-one {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1em;
+                        img {
+                            width: 100%;
+                        }
+                }
+                .partners-list-row-two {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1em;
+                        img {
+                            width: 100%;
                         }
                 }
         }
+}
+
+.section-footer {
+    
 }
     
    
