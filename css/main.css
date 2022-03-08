@@ -3,14 +3,17 @@
   margin: 0;
 }
 
+html,
+body {
+  position: relative;
+}
+
 .header-container {
   width: 100%;
-  height: 100vh;
   background: url(../images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
   position: relative;
 }
 
@@ -19,7 +22,7 @@
 }
 
 .header-container .navbar .hamburger {
-  margin: 8px 12px;
+  margin: 0 12px;
 }
 
 .header-container .navbar .hamburger a {
@@ -46,13 +49,13 @@
 }
 
 .header-container .header-text h3 {
-  color: #dc3545;
+  color: #ec5242;
   font-family: "Cocogoose", sans-serif;
   text-align: left;
 }
 
 .header-container .header-text h1 {
-  color: #dc3545;
+  color: #ec5242;
   font-family: "Cocogoose", sans-serif;
   text-align: left;
   padding-top: 0.75em;
@@ -87,14 +90,22 @@
   text-align: left;
 }
 
-.program {
+.our-program {
   width: 100%;
-  background-image: url("../images/bg2.jpg");
+  background-color: #272a31;
+}
+
+.our-program .program {
+  width: 100%;
+  background-image: url("../images/bg2.png");
+  background-color: myDark;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   background-repeat: no-repeat;
 }
 
-.program .program-header {
+.our-program .program .program-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,24 +115,24 @@
           flex-direction: column;
 }
 
-.program .program-header h2 {
+.our-program .program .program-header h2 {
   color: #f8f9fa;
   font-family: "Cocogoose", sans-serif;
   text-align: center;
   padding-top: 20px;
 }
 
-.program .program-header hr {
+.our-program .program .program-header hr {
   width: 20%;
   height: 2px;
-  background-color: #dc3545;
+  background-color: #ec5242;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 4px;
 }
 
-.program .program-list {
+.our-program .program .program-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +143,7 @@
   margin: 1em;
 }
 
-.program .program-list .program-list-items {
+.our-program .program .program-list .program-list-items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 2fr;
@@ -141,34 +152,111 @@
   background-color: #495057;
 }
 
-.program .program-list .program-list-items img {
-  width: 4em;
-  height: 4em;
+.our-program .program .program-list .program-list-items .icon-bar {
+  color: #f8f9fa;
+  font-size: 3rem;
+  padding: 0.3em;
+}
+
+.our-program .program .program-list .program-list-items h2 {
+  color: #ec5242;
   margin: auto 0;
+  text-align: left;
+  padding: 0.3em;
+}
+
+.our-program .program .program-list .program-list-items p {
   color: #f8f9fa;
   padding: 0.3em;
-  background-repeat: no-repeat;
+  text-align: left;
 }
 
-.program .program-list .program-list-items h2 {
-  color: #dc3545;
-  margin: auto 0;
-  text-align: center;
-  padding: 0.3em;
-}
-
-.program .program-list .program-list-items p {
-  color: #f8f9fa;
-  padding: 0.3em;
-}
-
-.program .program-list .program-btn {
+.our-program .program .program-list .program-btn {
   margin: 2em auto;
-  background-color: #dc3545;
 }
 
-.program .program-list .program-btn button {
+.our-program .program .program-list .program-btn button {
   font-family: "Cocogoose", sans-serif;
   color: #f8f9fa;
+  background-color: #ec5242;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.experts {
+  background-color: #fff;
+  width: 100%;
+}
+
+.experts .expert-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experts .expert-header h2 {
+  color: #272a31;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.experts .expert-header hr {
+  width: 20%;
+  height: 2px;
+  background-color: #272a31;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 4px;
+}
+
+.experts .expert-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+}
+
+.experts .expert-list .expert-list-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 1em 0;
+}
+
+.experts .expert-list .expert-list-items .person {
+  background-image: url(../images/profile2.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100px 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.experts .expert-list .expert-list-items .person .front-img {
+  position: relative;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.experts .expert-list .expert-list-items .person .front-img img {
+  width: 100%;
+  z-index: 2;
+}
+
+.experts .expert-list .expert-list-items .profile {
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */
