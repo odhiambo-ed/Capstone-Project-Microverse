@@ -89,13 +89,23 @@ $myLineHeight: 1.5;
   .program {
       width: 100%;
       background-image: url('../images/bg2.jpg');
-      background-color: $myDark;
+      position: relative;
+      background-repeat: no-repeat;
       .program-header {
         display: flex;
         flex-direction: column;
             h2 {
                 color: $myLight;
                 font-family: $myFont;
+                text-align: center;
+                padding-top: 20px;
+            }
+            hr {
+                width: 20%;
+                height: 2px;
+                background-color: $myRedColor;
+                align-self: center;
+                margin-top: 4px;
             }
       }
       .program-list {
@@ -105,6 +115,15 @@ $myLineHeight: 1.5;
             .program-list-items {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+                margin: 15px 0;
+                    img {
+                        width: 4em;
+                        height: 4em;
+                        margin: auto 0;
+                    }
+                    h2 {
+                        color: $myRedColor;
+                    }
             }
       }      
   }

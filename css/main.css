@@ -90,7 +90,8 @@
 .program {
   width: 100%;
   background-image: url("../images/bg2.jpg");
-  background-color: #212529;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 .program .program-header {
@@ -106,6 +107,18 @@
 .program .program-header h2 {
   color: #f8f9fa;
   font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.program .program-header hr {
+  width: 20%;
+  height: 2px;
+  background-color: #dc3545;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 4px;
 }
 
 .program .program-list {
@@ -124,5 +137,16 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  margin: 15px 0;
+}
+
+.program .program-list .program-list-items img {
+  width: 4em;
+  height: 4em;
+  margin: auto 0;
+}
+
+.program .program-list .program-list-items h2 {
+  color: #dc3545;
 }
 /*# sourceMappingURL=main.css.map */
