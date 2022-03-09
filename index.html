@@ -12,15 +12,16 @@
     <header class="header-container">
         <nav class="social">
             <ul>
-                <li><a href="">English</a></li>
-                <li><a href="">French</a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="">English</a></li>
                 <li><a href="">French</a></li>
             </ul>
         </nav>
       <nav class="navbar">
         <div class="logo">
-          <a href=""><img src="./images/logo.png" alt="IDREALITY" /></a>
+          <a href="index.html"><img src="./images/logo.png" alt="IDREALITY" /></a>
         </div>
         <div class="hamburger">
           <a href="#"
@@ -32,9 +33,19 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Blog</a></li>
-            <li class="nav-btn"><a href="#"></a>CC Campain</li>
+            <li ><a class="nav-btn" href="#">CC Campain</a></li>
           </ul>
         </div>
+      </nav>
+      <nav id = "mobile-nav" class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li ><a class="nav-btn" href="#">CC Campain</a></li>
+          </ul>
+
+          <span class="mobile-close"><i class="fas fa-times"></i></span>
       </nav>
       <div class="header-text">
         <h3>Hi! You want your ideas turned to reality?</h3>
@@ -91,107 +102,19 @@
             
         </div>
     </section>
-    <section class="experts">
-      <div class="expert-header">
-        <h2>Featured Contributors</h2>
-        <hr />
-      </div>
-      <div class="expert-list">
-        <div class="expert-list-items">
-          <div class="person">
 
-              <div class="front-img">
-                <img src="./images/edward.jpeg" alt="Edward's Image" />
-              </div>    
-            
-          </div>
-          <div class="profile">
-            <h2>Edward Odhiambo</h2>
-            <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-          </div>
+    <section class="experts">
+        <div class="expert-header">
+            <h2>Featured Contributors</h2>
+            <hr />
         </div>
 
-        <div class="expert-list-items">
-            <div class="person">
-  
-                <div class="front-img">
-                  <img src="./images/Edward2.jpeg" alt="Edward's Image" />
-                </div>    
-              
-            </div>
-            <div class="profile">
-              <h2>Edward Odhiambo</h2>
-              <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-            </div>            
-          </div>
-
-          <div class="expert-list-items">
-            <div class="person">
-  
-                <div class="front-img">
-                  <img src="./images/edward.jpeg" alt="Edward's Image" />
-                </div>    
-              
-            </div>
-            <div class="profile">
-              <h2>Edward Odhiambo</h2>
-              <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-            </div>
-          </div>
-
-          <div class="expert-list-items">
-            <div class="person">
-  
-                <div class="front-img">
-                  <img src="./images/Edward2.jpeg" alt="Edward's Image" />
-                </div>    
-              
-            </div>
-            <div class="profile">
-              <h2>Edward Odhiambo</h2>
-              <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-            </div>            
-          </div>
-
-          <div class="expert-list-items">
-            <div class="person">
-  
-                <div class="front-img">
-                  <img src="./images/edward.jpeg" alt="Edward's Image" />
-                </div>    
-              
-            </div>
-            <div class="profile">
-              <h2>Edward Odhiambo</h2>
-              <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-            </div>
-          </div>
-
-          <div class="expert-list-items">
-            <div class="person">
-  
-                <div class="front-img">
-                  <img src="./images/Edward2.jpeg" alt="Edward's Image" />
-                </div>    
-              
-            </div>
-            <div class="profile">
-              <h2>Edward Odhiambo</h2>
-              <h3>FullStack Web Developer/ Lorem ipsum dolor sit.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.</p>
-            </div>            
-          </div>
-          <div class="experts-btn">
-            <button type="button">MORE <i class="fa-solid fa-chevron-down icon-red"></i></button>
-            </div>          
-
-      </div>
+        <div class="expert-list"></div>
+        <div class="experts-btn">
+            <button id = "show-more-btn" type="button">MORE <i class="fa-solid fa-chevron-down icon-red"></i></button>
+        </div> 
     </section>
+
     <section class="partners">
         <div class="partners-header">            
                 <h2>Partners</h2>
@@ -219,5 +142,6 @@
             <p>All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

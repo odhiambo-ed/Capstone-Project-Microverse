@@ -39,6 +39,7 @@ p {
     .navbar {
         height: 50px;
         .hamburger {
+                // display: block;
                 margin: 0 12px;
             a {
                 cursor: pointer;
@@ -55,6 +56,25 @@ p {
         .desktop-nav {
             display: none;
         }
+    }
+    .mobile-nav {
+        display: none;
+        background-color: #fff;
+        height: 100vh;
+        width: 90vw;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 1em;
+            ul {
+                display: flex;
+                flex-direction: column;                
+                margin: 0.5em auto;
+                    li {
+                        list-style: none;                        
+                    }
+            }
+
     }
 
     .header-text {        
@@ -229,23 +249,26 @@ p {
                                     font-family: $myFontLato;
                                 }                                
                         }                        
-                }
-                .experts-btn {                    
-                    margin: 2em auto;
-                    overflow: hidden;
-                        button {
-                            font-family: $myFont;
-                            color: $myDark;
-                            background-color: $myLight;
-                            padding: 0.5em 11em;
-                            border: 1px solid $myDark;
-                            border-radius: 2px;
-                            font-size: 15px;
-                                .icon-red {
-                                    color: $myRedColor;
-                                }
-                        }                             
-                }
+                }                
+        }
+        .experts-btn {                    
+            margin: 2em 4em;
+            // overflow: hidden;
+            
+                button {
+                    font-family: $myFont;
+                    color: $myDark;
+                    background-color: $myLight;
+                    padding: 0.5em 1em;
+                    width: 100%;
+                    border: 1px solid $myDark;
+                    border-radius: 2px;
+                    font-size: 15px;
+                    box-sizing: border-box;
+                        .icon-red {
+                            color: $myRedColor;
+                        }
+                }                             
         }
 }
 
@@ -474,13 +497,20 @@ p {
                             justify-content: flex-end;
                             padding: 0.3em 7em 0.3em 0;                                                        
                                 li {
-                                    padding: 0 0.3em;
+                                    padding: 0 0.75em;
                                     list-style: none;
                                         a {
                                             color: $myLight;
                                             text-decoration: none;
                                             font-family: $myFontLato;
+                                            cursor: pointer;
                                         }
+
+                                        
+                                }
+
+                                li:hover{
+                                    transform: translateX(2px);
                                 }
                         }                    
                 }
@@ -519,15 +549,23 @@ p {
                                             text-decoration: none;
                                             font-family: $myFontLato;
                                             cursor: pointer;                                                                                            
-                                        }                                        
-                                }
-                                .nav-btn {
-                                    border: 1px solid $myRedColor;
-                                        li {
-                                            padding: 0.5em;
                                         }
-                                }
+                                        .nav-btn {
+                                            border: 2px solid $myRedColor; 
+                                            padding: 1em 2em;
+                                             color: $myRedColor;                                         
+
+                                        }
+                                        
+                                        
+                                }                                
                         }
+                        // .nav-btn {
+                        //     border: 1px solid $myRedColor;
+                        //         li {
+                        //             padding: 0.5em;
+                        //         }
+                        // }
                 }
             }
         
@@ -723,10 +761,11 @@ p {
                                         }                                
                                 }                        
                         }
-                        .experts-btn {                    
-                           display: none;                            
-                        }
+                        
                 }
+                .experts-btn {                    
+                    display: none;                            
+                 }
         }
         .partners {    
             background-color: #000;
