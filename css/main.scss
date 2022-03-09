@@ -63,16 +63,35 @@ p {
         height: 100vh;
         width: 90vw;
         top: 0;
-        right: 0;
+        left: 0;
         position: absolute;
-        margin: 1em;
+        padding: 2em 3em;
+            .mobile-close {
+                top: 0;                                 
+            }
             ul {
                 display: flex;
                 flex-direction: column;                
-                margin: 0.5em auto;
+                margin: 3em auto;
+                padding: 0 2em;
                     li {
-                        list-style: none;                        
+                        list-style: none;
+                        padding: 1em 0;
+                        border-top: 1px solid $myDark;
+                            a {
+                                color: $myDark;
+                                text-decoration: none;
+                                font-family: $myFontLato;
+                                font-weight: 400;
+                                font-size: 1.5rem;
+                                padding: 0.5em;
+                                cursor: pointer;
+                            }
+                            a:hover {
+                                color: $myRedColor;
+                            }                        
                     }
+                    
             }
 
     }
@@ -531,6 +550,9 @@ p {
                             img {
                                 width: 100%;                                
                             }
+                            img:hover {
+                                transform: translateX(4px);
+                            }
                         }
 
                 }
@@ -550,6 +572,9 @@ p {
                                             font-family: $myFontLato;
                                             cursor: pointer;                                                                                            
                                         }
+                                        a:hover {
+                                            color: $myRedColor;
+                                        } 
                                         .nav-btn {
                                             border: 2px solid $myRedColor; 
                                             padding: 1em 2em;
@@ -558,14 +583,8 @@ p {
                                         }
                                         
                                         
-                                }                                
-                        }
-                        // .nav-btn {
-                        //     border: 1px solid $myRedColor;
-                        //         li {
-                        //             padding: 0.5em;
-                        //         }
-                        // }
+                                }                                                              
+                        }            
                 }
             }
         

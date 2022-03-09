@@ -2,51 +2,51 @@ window.addEventListener('load', function(){
     const contributors = 
         [
             {
-                image: './images/edward.jpeg',
-                imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
+                image: './images/virag.jpg',
+                imageAlt: 'Virag\'s Image',
+                name: 'Virag Kormoczy - (Hungary)',
+                title: 'FullStack Web Developer/ Javascript, HTML, CSS and Ruby',
+                description: 'Virag is a student at Microverse and and has vast experience in programming',
+            },
+
+            {
+                image: './images/Nemwel.jpg',
+                imageAlt: 'Nemwel\'s Image',
+                name: 'Nemwel Boniface - (Kenya)',
+                title: 'FullStack Web Developer/ Javascript, HTML, CSS and Ruby',
+                description: 'Nemwel is a student at Microverse and and has vast experience in programming',
             },
 
             {
                 image: './images/Edward2.jpeg',
                 imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
+                name: 'Edward Odhiambo - (Kenya)',
+                title: 'Fullstack Web Developer/ Cyber Security Expert',
+                description: 'Edward is the founder of iDreality, a master graduate, and a student at Microverse',
             },
 
             {
-                image: './images/Edward2.jpeg',
-                imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
+                image: './images/dennis.jpg',
+                imageAlt: 'Dennis\'s Image',
+                name: 'Dennis Muturia - (Sweeden)',
+                title: 'Senior Software Engineer / DevOps(Docker and Kubernetes)',
+                description: 'Dennis is a Senior Software Engineer and a software security expertat Kubernetes',
             },
 
             {
-                image: './images/Edward2.jpeg',
-                imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
+                image: './images/janet.jpeg',
+                imageAlt: 'Janet\'s Image',
+                name: 'Janet Mugure - (Kenya)',
+                title: 'Geospatial Engineer/ Carl Inc.',
+                description: 'Janet is a Senior Geospatial Engineer at Carl Inc.',
             },
 
             {
-                image: './images/Edward2.jpeg',
-                imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
-            },
-
-            {
-                image: './images/Edward2.jpeg',
-                imageAlt: 'Edward\'s Image',
-                name: 'Edward Odhiambo',
-                title: 'FullStack Web Developer/ Lorem ipsum dolor sit.',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a quisquam nobis sunt sit.',
+                image: './images/shubh.png',
+                imageAlt: 'Shubh\'s Image',
+                name: 'Shubh Das - (India)',
+                title: 'FullStack Web Developer/ Javascript, HTML, CSS and Ruby.',
+                description: 'Shubh is a student at Microverse and and has vast experience in programming',
             },
 
            
