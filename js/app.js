@@ -1,5 +1,5 @@
-window.addEventListener('load', function(){
-    const contributors = 
+window.addEventListener('load', function () {
+    const contributors =
         [
             {
                 image: './images/virag.jpg',
@@ -49,15 +49,15 @@ window.addEventListener('load', function(){
                 description: 'Shubh is a student at Microverse and and has vast experience in programming',
             },
 
-           
+
         ];
 
 
-    function populateContributors(contributors, size){
+    function populateContributors(contributors, size) {
         let parentDiv = document.querySelector('.expert-list');
         parentDiv.innerHTML = "";
 
-        for(let i = 0; i < contributors.length; i++){
+        for (let i = 0; i < contributors.length; i++) {
             let expertListItems = document.createElement('div');
             expertListItems.className = 'expert-list-items';
 
@@ -70,7 +70,7 @@ window.addEventListener('load', function(){
             let image = document.createElement('img');
             image.src = contributors[i].image;
             image.alt = contributors[i].imageAlt;
-            
+
             frontImage.appendChild(image);
             person.appendChild(frontImage);
 
@@ -95,33 +95,33 @@ window.addEventListener('load', function(){
 
             parentDiv.appendChild(expertListItems);
 
-            if(size != -1 && i == size -1){
+            if (size != -1 && i == size - 1) {
                 break;
             }
         }
     }
 
-    if(document.querySelector('.expert-list') != undefined){
-        function showMoreButton(){
+    if (document.querySelector('.expert-list') != undefined) {
+        function showMoreButton() {
             let width = window.innerWidth;
 
-            if(width < 768){
+            if (width < 768) {
                 populateContributors(contributors, 3);
-            }else{
+            } else {
                 populateContributors(contributors, -1);
             }
         }
 
-        window.addEventListener('resize', function(){
+        window.addEventListener('resize', function () {
             showMoreButton();
         });
 
-        document.querySelector('#show-more-btn').addEventListener('click', function(e){
-            if(e.target.getAttribute('data-clicked') == undefined || e.target.getAttribute('data-clicked') == 0){
+        document.querySelector('#show-more-btn').addEventListener('click', function (e) {
+            if (e.target.getAttribute('data-clicked') == undefined || e.target.getAttribute('data-clicked') == 0) {
                 e.target.innerHTML = 'LESS <i class="fa-solid fa-chevron-up icon-red"></i>';
                 e.target.setAttribute('data-clicked', 1);
                 populateContributors(contributors, -1);
-            }else{
+            } else {
                 e.target.innerHTML = 'MORE <i class="fa-solid fa-chevron-down icon-red"></i>';
                 e.target.setAttribute('data-clicked', 0);
                 populateContributors(contributors, 3);
@@ -130,12 +130,12 @@ window.addEventListener('load', function(){
         showMoreButton();
     }
 
-    document.querySelector('.mobile-close').addEventListener('click', function(){
+    document.querySelector('.mobile-close').addEventListener('click', function () {
         document.querySelector('#mobile-nav').style.display = 'none';
         document.querySelector('.hamburger').style.display = 'block';
     });
 
-    document.querySelector('.hamburger').addEventListener('click', function(){
+    document.querySelector('.hamburger').addEventListener('click', function () {
         document.querySelector('#mobile-nav').style.display = 'block';
         document.querySelector('.hamburger').style.display = 'none';
     });
