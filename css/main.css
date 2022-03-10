@@ -35,8 +35,22 @@ p {
   margin: 0 12px;
 }
 
+.header-container .mobile-nav ul li a {
+  color: #272a31;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
 .header-container .navbar .hamburger a {
   cursor: pointer;
+}
+
+.header-container .mobile-nav ul li a:hover {
+  color: #ec5242;
 }
 
 .header-container .navbar .hamburger a .icon-bar {
@@ -81,20 +95,6 @@ p {
   list-style: none;
   padding: 1em 0;
   border-top: 1px solid #272a31;
-}
-
-.header-container .mobile-nav ul li a {
-  color: #272a31;
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  padding: 0.5em;
-  cursor: pointer;
-}
-
-.header-container .mobile-nav ul li a:hover {
-  color: #ec5242;
 }
 
 .header-container .header-text {
@@ -188,7 +188,6 @@ p {
     height: 6em;
     background-color: #fff;
     display: grid;
-    -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
   }
 

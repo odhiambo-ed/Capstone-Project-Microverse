@@ -148,3 +148,13 @@ window.addEventListener('load', () => {
     document.querySelector('.hamburger').style.display = 'none';
   });
 });
+
+function menuLink() {
+  const elements = document.getElementsByClassName('mobile-nav');
+  Array.from(elements).forEach((x) => {
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+    }
+  });
+}
+menuLink();
