@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap");
 
-$myFont: 'Cocogoose', sans-serif;
-$myFontLato: 'Lato', sans-serif;
+$myFont: "Cocogoose", sans-serif;
+$myFontLato: "Lato", sans-serif;
 $myRedColor: #ec5242;
 $myGray700: #495057;
 $myGray300: #d3d3d3;
@@ -12,972 +12,1116 @@ $myfontWeight: 400;
 $myLineHeight: 1.5;
 
 * {
-    margin: 0;
-} 
+  margin: 0;
+}
 
 html,
-body {    
-    position: relative;
+body {
+  position: relative;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header-container {
-    width: 100%;    
-    background: url(../images/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    position: relative;
-    padding-bottom: 2em;
-        .social {
-            display: none;
-        }
+  width: 100%;
+  background: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 2em;
 
-    .navbar {
-        height: 50px;
-        .hamburger {
-                // display: block;
-                margin: 0 12px;
-            a {
-                cursor: pointer;
-                    .icon-bar {
-                    width: 40px;
-                    height: 40px;
-                    padding: 8px 12px;
-                }
-            } 
-            }
-        .logo {
-            display: none;
-        }
-        .desktop-nav {
-            display: none;
-        }
-    }
-    .mobile-nav {
-        display: none;
-        background-color: #fff;
-        height: 100vh;
-        width: 90vw;
-        top: 0;
-        left: 0;
-        position: absolute;
-        padding: 2em 3em;
-            .mobile-close {
-                top: 0;                                 
-            }
-            ul {
-                display: flex;
-                flex-direction: column;                
-                margin: 3em auto;
-                padding: 0 2em;
-                    li {
-                        list-style: none;
-                        padding: 1em 0;
-                        border-top: 1px solid $myDark;
-                            a {
-                                color: $myDark;
-                                text-decoration: none;
-                                font-family: $myFontLato;
-                                font-weight: 400;
-                                font-size: 1.5rem;
-                                padding: 0.5em;
-                                cursor: pointer;
-                            }
-                            a:hover {
-                                color: $myRedColor;
-                            }                        
-                    }
-                    
-            }
+  .social {
+    display: none;
+  }
 
+  .navbar {
+    height: 50px;
+
+    .hamburger {      
+      margin: 0 12px;
+
+      a {
+        cursor: pointer;
+        .icon-bar {
+          width: 40px;
+          height: 40px;
+          padding: 8px 12px;
+        }
+      }
     }
 
-    .header-text {        
-        margin: 1em;
-        h3 {
-            color: $myRedColor;
-            font-family: $myFont;
-            text-align: left;
-        }
-        h1 {
-            color: $myRedColor;
-            font-family: $myFont;
-            text-align: left;
-            padding-top: 0.75em;
-            padding-bottom: 0.75em;
-        }
-        .border-text {
-            border: 2px solid #fff;
-            border-radius: 2px;
-            width: 90%;
-            background: rgba(222, 226, 230, 0.3);
-            margin: 0 auto;
-            p {
-                padding: 0.5em;
-                color: $myGray700;
-                font-family: $myFont;
-            }
-        }
-        .header-date {
-            margin: 10px;
-            h2 {
-                color: $myGray700;
-                font-family: $myFont;
-            }
-            p {
-                padding-top: 1em;
-                color: $myGray700;                
-                text-align: left;
-            }
-        }
+    .logo {
+      display: none;
+    }
+
+    .desktop-nav {
+      display: none;
     }
   }
 
- .our-program {   
-     background-color: $myDark;
-     .program {        
-        background-image: url('../images/bg2.png');
-        background-color: myDark;
-        object-fit: cover;
-        position: relative;
-        background-repeat: no-repeat;
-            .program-header {
-                display: flex;
-                flex-direction: column;
-                    h2 {
-                        color: $myLight;
-                        font-family: $myFont;
-                        text-align: center;
-                        padding-top: 1em;
-                        padding-bottom: 0.5em;
-                    }
-                    hr {
-                        width: 20%;
-                        height: 2px;
-                        background-color: $myRedColor;
-                        align-self: center;                        
-                    }
-            }
-        .program-list {
-            display: flex;
-            flex-direction: column;
-            margin: 1em;
-              .program-list-items {
-                  display: grid;
-                  grid-template-columns: 1fr 1fr 2fr;                  
-                  margin: 0.2em 0;
-                  background-color: $myGray700;
-                      .icon-bar {
-                          
-                          color: $myLight;
-                          font-size: 3rem;
-                          padding: 0.3em;
-                          
-                      }
-                      h2 {
-                          color: $myRedColor;
-                          margin: auto 0;
-                          text-align: left;
-                          padding: 0.3em;
-                      }
-                      p {
-                          color: $myLight;
-                          padding: 0.3em;
-                          text-align: left;
-                      }
-              }
-              .program-btn {
-                  margin: 2em auto;
-                      button {
-                          font-family: $myFont;
-                          color: $myLight;
-                          background-color: $myRedColor;
-                          padding: 1em 3em;
-                          border: 0;
-                          border-radius: 2px;
-                          font-size: 20px;
-                      }                
-              }
-        }
-        .program-btn-desktop {
-            display: none;
-        }      
-    }
- }
+  .mobile-nav {
+    display: none;
+    background-color: #fff;
+    height: 100vh;
+    width: 90vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 2em 3em;
 
-.experts {
-    background-color: #fff;    
-        .expert-header {
-            display: flex;
-            flex-direction: column;
-            h2 {
-                color: $myDark;
-                font-family: $myFont;
-                text-align: center;
-                padding-top: 20px;
-            }
-            hr {
-                width: 20%;
-                height: 2px;
-                background-color: $myDark;
-                align-self: center;
-                margin-top: 4px;
-            }
+    .mobile-close {
+      top: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 3em auto;
+      padding: 0 2em;
+
+      li {
+        list-style: none;
+        padding: 1em 0;
+        border-top: 1px solid $myDark;
+
+        a {
+          color: $myDark;
+          text-decoration: none;
+          font-family: $myFontLato;
+          font-weight: 400;
+          font-size: 1.5rem;
+          padding: 0.5em;
+          cursor: pointer;
         }
-        .expert-list {
-            display: flex;
-            flex-direction: column;
-            margin: 1em;
-                .expert-list-items {
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    margin: 1em 0;
-                        .person {                              
-                            background-image: url(../images/profile-bg.jpg);   
-                            background-repeat: no-repeat;
-                            background-position: top left;
-                            background-size: 4em 4em;
-                            padding-top: 20px;
-                            padding-left: 20px;    
-                                .front-img {
-                                    position: relative;
-                                    box-shadow: 0 0 5px rgba(0,0,0,0.5);                                                                  
-                                            img {
-                                            width: 100%;
-                                            height: 8em;
-                                            object-fit: cover;
-                                            z-index: 2;                                            
-                                        }
-                                }
-                        }
-                        .profile {
-                            margin: auto 0;
-                            padding: 1em;
-                            align-items: left;
-                                h2 {                                    
-                                    color: $myDark;
-                                    font-family: $myFontLato;
-                                }
-                                h3 {
-                                    margin: 0.75em 0;
-                                    color: $myRedColor;
-                                    font-family: $myFontLato;
-                                }                                
-                        }                        
-                }                
+
+        a:hover {
+          color: $myRedColor;
         }
-        .experts-btn {                    
-            margin: 2em 4em;
-            // overflow: hidden;
-            
-                button {
-                    font-family: $myFont;
-                    color: $myDark;
-                    background-color: $myLight;
-                    padding: 0.5em 1em;
-                    width: 100%;
-                    border: 1px solid $myDark;
-                    border-radius: 2px;
-                    font-size: 15px;
-                    box-sizing: border-box;
-                        .icon-red {
-                            color: $myRedColor;
-                        }
-                }                             
-        }
+      }
+    }
+  }
+
+  .header-text {
+    margin: 1em;
+
+    h3 {
+      color: $myRedColor;
+      font-family: $myFont;
+      text-align: left;
+    }
+
+    h1 {
+      color: $myRedColor;
+      font-family: $myFont;
+      text-align: left;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+    }
+
+    .border-text {
+      border: 2px solid #fff;
+      border-radius: 2px;
+      width: 90%;
+      background: rgba(222, 226, 230, 0.3);
+      margin: 0 auto;
+
+      p {
+        padding: 0.5em;
+        color: $myGray700;
+        font-family: $myFont;
+      }
+    }
+
+    .header-date {
+      margin: 10px;
+      h2 {
+        color: $myGray700;
+        font-family: $myFont;
+      }
+
+      p {
+        padding-top: 1em;
+        color: $myGray700;
+        text-align: left;
+      }
+    }
+  }
 }
 
-.partners {    
-    background-color: #000;
-        .partners-header {
-            display: flex;
-            flex-direction: column;
-            h2 {
-                color: $myLight;
-                font-family: $myFont;
-                text-align: center;
-                padding-top: 20px;
-            }
-            hr {
-                width: 10%;
-                height: 1px;
-                background-color: $myRedColor;
-                align-self: center;
-                margin-top: 1em;
-            } 
+.our-program {
+  background-color: $myDark;
+
+  .program {
+    background-image: url("../images/bg2.png");
+    background-color: myDark;
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    .program-header {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: $myLight;
+        font-family: $myFont;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+      }
+
+      hr {
+        width: 20%;
+        height: 2px;
+        background-color: $myRedColor;
+        align-self: center;
+      }
+    }
+
+    .program-list {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+
+      .program-list-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        margin: 0.2em 0;
+        background-color: $myGray700;
+
+        .icon-bar {
+          color: $myLight;
+          font-size: 3rem;
+          padding: 0.3em;
         }
-        .partners-list {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            margin: 1em 1em 0 1em;
-            padding-bottom: 2em;
-                .partners-list-row-one {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 1em;
-                        img {
-                            width: 100%;
-                        }
-                }
-                .partners-list-row-two {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 1em;
-                    margin: 0 auto;
-                    width: 60%;
-                        img {
-                            width: 100%;
-                            align-self: center;
-                        }
-                }
+
+        h2 {
+          color: $myRedColor;
+          margin: auto 0;
+          text-align: left;
+          padding: 0.3em;
         }
+
+        p {
+          color: $myLight;
+          padding: 0.3em;
+          text-align: left;
+        }
+      }
+
+      .program-btn {
+        margin: 2em auto;
+
+        button {
+          font-family: $myFont;
+          color: $myLight;
+          background-color: $myRedColor;
+          padding: 1em 3em;
+          border: 0;
+          border-radius: 2px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .program-btn-desktop {
+      display: none;
+    }
+  }
+}
+
+.experts {
+  background-color: #fff;
+
+  .expert-header {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $myDark;
+      font-family: $myFont;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    hr {
+      width: 20%;
+      height: 2px;
+      background-color: $myDark;
+      align-self: center;
+      margin-top: 4px;
+    }
+  }
+
+  .expert-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+    .expert-list-items {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin: 1em 0;
+
+      .person {
+        background-image: url(../images/profile-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 4em 4em;
+        padding-top: 20px;
+        padding-left: 20px;
+
+        .front-img {
+          position: relative;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+          img {
+            width: 100%;
+            height: 8em;
+            object-fit: cover;
+            z-index: 2;
+          }
+        }
+      }
+
+      .profile {
+        margin: auto 0;
+        padding: 1em;
+        align-items: left;
+
+        h2 {
+          color: $myDark;
+          font-family: $myFontLato;
+        }
+
+        h3 {
+          margin: 0.75em 0;
+          color: $myRedColor;
+          font-family: $myFontLato;
+        }
+      }
+    }
+  }
+
+  .experts-btn {
+    margin: 2em 4em;
+    // overflow: hidden;
+
+    button {
+      font-family: $myFont;
+      color: $myDark;
+      background-color: $myLight;
+      padding: 0.5em 1em;
+      width: 100%;
+      border: 1px solid $myDark;
+      border-radius: 2px;
+      font-size: 15px;
+      box-sizing: border-box;
+
+      .icon-red {
+        color: $myRedColor;
+      }
+    }
+  }
+}
+
+.partners {
+  background-color: #000;
+
+  .partners-header {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $myLight;
+      font-family: $myFont;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    hr {
+      width: 10%;
+      height: 1px;
+      background-color: $myRedColor;
+      align-self: center;
+      margin-top: 1em;
+    }
+  }
+
+  .partners-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 1em 1em 0 1em;
+    padding-bottom: 2em;
+
+    .partners-list-row-one {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1em;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .partners-list-row-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      margin: 0 auto;
+      width: 60%;
+
+      img {
+        width: 100%;
+        align-self: center;
+      }
+    }
+  }
 }
 
 .section-footer {
-    background-color: $myLight;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1em;
-        .footer-left {
-            margin: auto 0;
-                img {
-                    width: 100%;
-                }
-        }
-        .footer-right {
-            margin: auto 0;                
-        }
+  background-color: $myLight;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+
+  .footer-left {
+    margin: auto 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer-right {
+    margin: auto 0;
+  }
 }
 
 /*******************************************/
 //ABOUT PAGE
 /*******************************************/
 
-    .header-text-about {        
-        margin: 20px 10px;
-        h3 {
-            color: $myRedColor;
-            font-family: $myFont;
-            text-align: center;
-        }
-        h1 {
-            color: $myRedColor;
-            font-family: $myFont;
-            text-align: center;
-            padding-top: 0.75em;
-            padding-bottom: 0.75em;
-        }
-        .border-text-about {
-            border: 2px solid $myGray300;
-            border-radius: 2px;
-            width: 90%;
-            background: #fff;
-            margin: auto 1em;
-            p {
-                padding: 0.5em;
-                color: $myDark;
-                font-family: $myFont;
-            }
-        }
-        .header-end {
-            margin: auto 1em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            p {
-                color: $myDark;                
-                text-align: center;
-            }
-        }
+.header-text-about {
+  margin: 20px 10px;
+
+  h3 {
+    color: $myRedColor;
+    font-family: $myFont;
+    text-align: center;
+  }
+
+  h1 {
+    color: $myRedColor;
+    font-family: $myFont;
+    text-align: center;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+
+  .border-text-about {
+    border: 2px solid $myGray300;
+    border-radius: 2px;
+    width: 90%;
+    background: #fff;
+    margin: auto 1em;
+
+    p {
+      padding: 0.5em;
+      color: $myDark;
+      font-family: $myFont;
+    }
+  }
+
+  .header-end {
+    margin: auto 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    p {
+      color: $myDark;
+      text-align: center;
+    }
+  }
+}
+
+.about {
+  margin: 1em;
+  padding: 2em 0;
+
+  .about-header {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: $myDark;
+      text-align: center;
     }
 
-    .about {
-        margin: 1em;
-        padding: 2em 0;
-            .about-header {
-                display: flex;
-                flex-direction: column;
-                    h3 {
-                        color: $myDark;
-                        text-align: center;
-                    }
-                    hr {
-                        width: 5%;
-                        height: 1px;
-                        background-color: $myRedColor;
-                        align-self: center;
-                        margin-top: 1em;
-                     }
-                     p {
-                         margin-top: 1em;
-                         text-align: center;
-                     }
-            }
-            .logo-area {
-                padding-top: 1em;
-                margin: 1em auto;
-                border: 0.5px solid $myDark;                
-                border-radius: 2px;
-                    img {
-                        width: 100%;
-                    }
-
-            }
+    hr {
+      width: 5%;
+      height: 1px;
+      background-color: $myRedColor;
+      align-self: center;
+      margin-top: 1em;
     }
 
-    .samples {
-        margin: 1em;
-        padding: 2em 0;
-            .samples-header {
-                display: flex;
-                flex-direction: column;
-                    h3 {
-                        color: $myDark;
-                        text-align: center;
-                    }
-                    hr {
-                        width: 5%;
-                        height: 1px;
-                        background-color: $myRedColor;
-                        align-self: center;
-                        margin-top: 1em;
-                     }
-                     p {
-                         margin-top: 1em;
-                         text-align: center;
-                     }
-            }
-            .samples-work {
-                margin: 1em;
-                    .samples-work-items {
-                        display: grid;
-                        grid-template-rows: 1fr 1fr;
-                        gap: 1em;
-                           .samples-image-one {
-                                background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
-                                width: 100%;
-                                height: 35vh;
-                                background-repeat: no-repeat;
-                                    h2 {    
-                                        color: $myLight;
-                                        text-align: center;
-                                        font-size: 2.5rem;
-                                        padding-top: 2em;
-                                    }
-                                    p {                                       
-                                        color: $myLight;
-                                        text-align: center;
-                                        padding-bottom: 2em;
-                                    }                                
-                           }
-                           .samples-image-two {
-                            background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
-                            width: 100%;
-                            height: 35vh;
-                            background-repeat: no-repeat;
-                                h2 {    
-                                    color: $myLight;
-                                    text-align: center;
-                                    font-size: 2.5rem;
-                                    padding-top: 2em;
-                                }
-                                p {                                       
-                                    color: $myLight;
-                                    text-align: center;
-                                    padding-bottom: 2em;
-                                }                                
-                       }
-                    }
-            }
+    p {
+      margin-top: 1em;
+      text-align: center;
     }
-    
-    /*******************************/
-    //DESKTOP VERSION
-    /******************************/
+  }
 
-    @media screen and (min-width: 768px) {
-        .header-container {
-            width: 100%;    
-            background: url(../images/bg.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;    
-            position: relative;
-            padding-bottom: 2em;
-                .social {
-                    background-color: $myDark;                    
-                    display: block;
-                        ul {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: flex-end;
-                            padding: 0.3em 7em 0.3em 0;                                                        
-                                li {
-                                    padding: 0 0.75em;
-                                    list-style: none;
-                                        a {
-                                            color: $myLight;
-                                            text-decoration: none;
-                                            font-family: $myFontLato;
-                                            cursor: pointer;
-                                        }
+  .logo-area {
+    padding-top: 1em;
+    margin: 1em auto;
+    border: 0.5px solid $myDark;
+    border-radius: 2px;
 
-                                        
-                                }
+    img {
+      width: 100%;
+    }
+  }
+}
 
-                                li:hover{
-                                    transform: translateX(2px);
-                                }
-                        }                    
-                }
-        
-            .navbar {            
-                height: 6em;
-                background-color: #fff;
-                display: grid;
-                grid-template-columns: 1fr 2fr;                
-                .hamburger {
-                    display: none;
-                    }
-                .logo { 
-                    display: block;                   
-                    width: 12em;
-                    padding-left: 6em;
-                        a {
-                            img {
-                                width: 100%;                                
-                            }
-                            img:hover {
-                                transform: translateX(4px);
-                            }
-                        }
+.samples {
+  margin: 1em;
+  padding: 2em 0;
 
-                }
-                .desktop-nav {
-                    display: block;         
-                        ul {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: flex-end; 
-                            padding-right: 7em;
-                                li {
-                                    padding: 2em 1em;
-                                    list-style: none;
-                                        a {
-                                            color: $myDark;
-                                            text-decoration: none;
-                                            font-family: $myFontLato;
-                                            cursor: pointer;                                                                                            
-                                        }
-                                        a:hover {
-                                            color: $myRedColor;
-                                        } 
-                                        .nav-btn {
-                                            border: 2px solid $myRedColor; 
-                                            padding: 1em 2em;
-                                             color: $myRedColor;                                         
+  .samples-header {
+    display: flex;
+    flex-direction: column;
 
-                                        }
-                                        
-                                        
-                                }                                                              
-                        }            
-                }
-            }
-        
-            .header-text {
-                margin: 5em 9em;
-                padding-right: 16em;
-                display: flex;
-                flex-direction: column;
-                justify-content: left;                
-                h3 {
-                    color: $myRedColor;
-                    font-family: $myFont;
-                    text-align: left;
-                }
-                h1 {
-                    color: $myRedColor;
-                    font-family: $myFont;
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    text-align: left;
-                    padding-top: 0.75em;
-                    padding-bottom: 0.75em;
-                }
-                .border-text {
-                    border: 2px solid #fff;
-                    border-radius: 2px;
-                    width: 90%;
-                    background: rgba(222, 226, 230, 0.3);
-                    margin: auto 0;
-                    padding-top: 1em;                    
-                    p {
-                        padding: 0.5em;
-                        color: $myGray700;
-                        font-family: $myFont;
-                    }
-                }
-                .header-date {
-                    margin-top: 1em;
-                    h2 {
-                        color: $myGray700;
-                        font-family: $myFont;
-                        font-weight: bold;
-                    }
-                    p {
-                        padding-top: 1em;
-                        color: $myGray700;                
-                        text-align: left;
-                    }
-                }
-            }
+    h3 {
+      color: $myDark;
+      text-align: center;
+    }
+
+    hr {
+      width: 5%;
+      height: 1px;
+      background-color: $myRedColor;
+      align-self: center;
+      margin-top: 1em;
+    }
+
+    p {
+      margin-top: 1em;
+      text-align: center;
+    }
+  }
+
+  .samples-work {
+    margin: 1em;
+
+    .samples-work-items {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1em;
+
+      .samples-image-one {
+        background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+          url(../images/sample1.jpg);
+        width: 100%;
+        height: 35vh;
+        background-repeat: no-repeat;
+
+        h2 {
+          color: $myLight;
+          text-align: center;
+          font-size: 2.5rem;
+          padding-top: 2em;
+        }
+
+        p {
+          color: $myLight;
+          text-align: center;
+          padding-bottom: 2em;
+        }
+      }
+
+      .samples-image-two {
+        background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+          url(../images/sample2.jpg);
+        width: 100%;
+        height: 35vh;
+        background-repeat: no-repeat;
+
+        h2 {
+          color: $myLight;
+          text-align: center;
+          font-size: 2.5rem;
+          padding-top: 2em;
+        }
+
+        p {
+          color: $myLight;
+          text-align: center;
+          padding-bottom: 2em;
+        }
+      }
+    }
+  }
+}
+
+/*******************************/
+//DESKTOP VERSION
+/******************************/
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 100%;
+    background: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 2em;
+
+    .social {
+      background-color: $myDark;
+      display: block;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0.3em 7em 0.3em 0;
+
+        li {
+          padding: 0 0.75em;
+          list-style: none;
+
+          a {
+            color: $myLight;
+            text-decoration: none;
+            font-family: $myFontLato;
+            cursor: pointer;
+          }
+        }
+
+        li:hover {
+          transform: translateX(2px);
+        }
+      }
+    }
+
+    .navbar {
+      height: 6em;
+      background-color: #fff;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      .hamburger {
+        display: none;
+      }
+
+      .logo {
+        display: block;
+        width: 12em;
+        padding-left: 6em;
+
+        a {
+          img {
+            width: 100%;
           }
 
-          /****************************/
-          // Desktop - Program Section
-          /***************************/
+          img:hover {
+            transform: translateX(4px);
+          }
+        }
+      }
 
-          .our-program {   
-            background-color: $myDark;
-            .program {        
-               background-image: url('../images/bg2.png');
-               background-color: myDark;
-               object-fit: cover;
-               position: relative;
-               background-repeat: no-repeat;
-                   .program-header {
-                       display: flex;
-                       flex-direction: column;
-                           h2 {
-                               color: $myLight;
-                               font-family: $myFont;
-                               text-align: center;
-                               padding-top: 2em;
-                               padding-bottom: 0.5em;
-                           }
-                           hr {
-                               width: 5%;
-                               height: 1px;
-                               background-color: $myRedColor;
-                               align-self: center;                        
-                           }
-                   }
-               .program-list {
-                   display: flex;
-                   flex-direction: row;
-                   margin: 4em 11em;
-                     .program-list-items {                        
-                        display: flex;
-                        flex-direction: column;
-                        margin: 0 0.2em;
-                        background-color: $myGray700;
-                             .icon-bar {                                 
-                                 color: $myLight;
-                                 font-size: 3rem;
-                                 padding: 0.3em;
-                                 text-align: center;
-                                 
-                             }
-                             h2 {
-                                 color: $myRedColor;
-                                 margin: auto 0;
-                                 text-align: center;
-                                 padding: 0.3em;
-                             }
-                             p {
-                                 color: $myLight;
-                                 padding: 0.3em;
-                                 text-align: center;
-                             }
-                     }
-                     .program-btn {
-                        display: none;               
-                     }
-               }
-               .program-btn-desktop {
-                   display: block;
-                   margin: 0 auto;
-                   padding-bottom: 2em;
-                   width: 20%;                   
-                    p{
-                        margin: 0 auto;
-                        padding: 0 2em;                                            
-                        a {
-                            padding: 0 2em; 
-                            color: $myLight;
-                            text-align: center;
-                        }
+      .desktop-nav {
+        display: block;
 
-                    }
-               }      
-           }
-        }
-        .experts {
-            background-color: #fff;    
-                .expert-header {
-                    display: flex;
-                    flex-direction: column;
-                    h2 {
-                        color: $myDark;
-                        font-family: $myFont;
-                        text-align: center;
-                        padding-top: 2em;
-                    }
-                    hr {
-                        width: 5%;
-                        height: 2px;
-                        background-color: $myDark;
-                        align-self: center;
-                        margin-top: 4px;
-                    }
-                }
-                .expert-list {                    
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    margin: 3em 11em;
-                        .expert-list-items {
-                            display: grid;
-                            grid-template-columns: 1fr 2fr;
-                            margin: 1em 0;
-                                .person {                              
-                                    background-image: url(../images/profile-bg.jpg);   
-                                    background-repeat: no-repeat;
-                                    background-position: top left;
-                                    background-size: 4em 4em;
-                                    padding-top: 20px;
-                                    padding-left: 20px;    
-                                        .front-img {
-                                            position: relative;
-                                            box-shadow: 0 0 5px rgba(0,0,0,0.5);                                                                  
-                                                    img {
-                                                    width: 100%;
-                                                    height: 10em;
-                                                    object-fit: cover;
-                                                    z-index: 2;                                            
-                                                }
-                                        }
-                                }
-                                .profile {
-                                    margin: auto 0;
-                                    padding: 1em;
-                                    align-items: left;
-                                        h2 {                                    
-                                            color: $myDark;
-                                            font-family: $myFontLato;
-                                        }
-                                        h3 {
-                                            margin: 0.75em 0;
-                                            color: $myRedColor;
-                                            font-family: $myFontLato;
-                                            font-weight: 200;
-                                            font-style: italic;
-                                            font-size: 1rem;
-                                        }                                
-                                }                        
-                        }
-                        
-                }
-                .experts-btn {                    
-                    display: none;                            
-                 }
-        }
-        .partners {    
-            background-color: #000;
-            padding-top: 3em;
-                .partners-header {
-                    display: flex;
-                    flex-direction: column;
-                    h2 {
-                        color: $myLight;
-                        font-family: $myFont;
-                        text-align: center;
-                        padding-top: 20px;
-                    }
-                    hr {
-                        width: 10%;
-                        height: 1px;
-                        background-color: $myRedColor;
-                        align-self: center;
-                        margin-top: 1em;
-                    } 
-                }
-                .partners-list {
-                    display: grid;
-                    grid-template-columns: 3fr 2fr;                   
-                    margin: 4em 11em;
-                    padding-bottom: 2em;
-                        .partners-list-row-one {                            
-                                img {
-                                    width: 100%;
-                                }
-                        }
-                        .partners-list-row-two {                            
-                                img {
-                                    width: 100%;
-                                    // align-self: center;
-                                }
-                        }
-                }
-        }
-        .section-footer {
-            background-color: $myLight;
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 4em;            
-            padding: 4em 14em;
-                .footer-left {
-                    margin: auto 0;
-                        img {
-                            width: 100%;
-                        }
-                }
-                .footer-right {
-                    margin: auto 0;                
-                }
-        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          padding-right: 7em;
 
-        /****************************/
-        // Desktop - ABOUT PAGE
-        /****************************/
+          li {
+            padding: 2em 1em;
+            list-style: none;
 
-        .header-text-about {
-            margin: 4em 11em;                
-                h1 {
-                    color: $myRedColor;
-                    font-family: $myFont;
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    text-align: center;
-                    padding-top: 0.75em;
-                    padding-bottom: 0.75em;
-                }
-                .border-text-about {
-                    border: 2px solid $myGray300;
-                    border-radius: 2px;
-                    width: 90%;
-                    background: #fff;
-                    margin: 1em auto;
-                    p {
-                        padding: 0.5em;
-                        color: $myDark;
-                        font-family: $myFont;
-                        text-align: center;
-                    }
-                }
-                .header-end {
-                    margin: 1em auto;
-                    padding: 1em 8em;
-                    p {
-                        color: $myDark;                
-                        text-align: center;
-                    }
-                }
-        }
+            a {
+              color: $myDark;
+              text-decoration: none;
+              font-family: $myFontLato;
+              cursor: pointer;
+            }
 
-        .about {
-            margin: 4em 14em;
-            padding: 2em 0;
-                .about-header {
-                    display: flex;
-                    flex-direction: column;
-                        h3 {
-                            color: $myDark;
-                            text-align: center;
-                        }
-                        hr {
-                            width: 5%;
-                            height: 1px;
-                            background-color: $myRedColor;
-                            align-self: center;
-                            margin-top: 1em;
-                         }
-                         p {
-                             margin-top: 1em;
-                             text-align: center;
-                         }
-                }
-                .logo-area {
-                    padding-top: 1em;
-                    margin: 1em auto;
-                    width: 50%;
-                    border: 0.5px solid $myDark;                
-                    border-radius: 2px;
-                        img {
-                            width: 100%;
-                        }
-    
-                }
-        }
+            a:hover {
+              color: $myRedColor;
+            }
 
-        .samples {
-            margin: 4em 11em;
-            padding: 2em 0;
-                .samples-header {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0 6em;
-                        h3 {
-                            color: $myDark;
-                            text-align: center;
-                        }
-                        hr {
-                            width: 5%;
-                            height: 1px;
-                            background-color: $myRedColor;
-                            align-self: center;
-                            margin-top: 1em;
-                         }
-                         p {
-                             margin-top: 1em;
-                             text-align: center;
-                         }
-                }
-                .samples-work {
-                    margin: 1em;
-                        .samples-work-items {                            
-                            display: flex;
-                            flex-direction: row;
-                               .samples-image-one {
-                                    background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
-                                    width: 50%;
-                                    height: 35vh;
-                                    background-repeat: no-repeat;
-                                        h2 {    
-                                            color: $myLight;
-                                            text-align: center;
-                                            font-size: 2.5rem;
-                                            padding-top: 2em;
-                                        }
-                                        p {                                       
-                                            color: $myLight;
-                                            text-align: center;
-                                            padding-bottom: 2em;
-                                        }                                
-                               }
-                               .samples-image-two {
-                                background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
-                                width: 50%;
-                                height: 35vh;
-                                background-repeat: no-repeat;
-                                    h2 {    
-                                        color: $myLight;
-                                        text-align: center;
-                                        font-size: 2.5rem;
-                                        padding-top: 2em;
-                                    }
-                                    p {                                       
-                                        color: $myLight;
-                                        text-align: center;
-                                        padding-bottom: 2em;
-                                    }                                
-                           }
-                        }
-                }
+            .nav-btn {
+              border: 2px solid $myRedColor;
+              padding: 1em 2em;
+              color: $myRedColor;
+            }
+          }
         }
+      }
     }
+
+    .header-text {
+      margin: 5em 9em;
+      padding-right: 16em;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+
+      h3 {
+        color: $myRedColor;
+        font-family: $myFont;
+        text-align: left;
+      }
+
+      h1 {
+        color: $myRedColor;
+        font-family: $myFont;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+      }
+
+      .border-text {
+        border: 2px solid #fff;
+        border-radius: 2px;
+        width: 90%;
+        background: rgba(222, 226, 230, 0.3);
+        margin: auto 0;
+        padding-top: 1em;
+
+        p {
+          padding: 0.5em;
+          color: $myGray700;
+          font-family: $myFont;
+        }
+      }
+
+      .header-date {
+        margin-top: 1em;
+
+        h2 {
+          color: $myGray700;
+          font-family: $myFont;
+          font-weight: bold;
+        }
+
+        p {
+          padding-top: 1em;
+          color: $myGray700;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  /****************************/
+  // Desktop - Program Section
+  /***************************/
+
+  .our-program {
+    background-color: $myDark;
+
+    .program {
+      background-image: url("../images/bg2.png");
+      background-color: myDark;
+      object-fit: cover;
+      position: relative;
+      background-repeat: no-repeat;
+
+      .program-header {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          color: $myLight;
+          font-family: $myFont;
+          text-align: center;
+          padding-top: 2em;
+          padding-bottom: 0.5em;
+        }
+
+        hr {
+          width: 5%;
+          height: 1px;
+          background-color: $myRedColor;
+          align-self: center;
+        }
+      }
+
+      .program-list {
+        display: flex;
+        flex-direction: row;
+        margin: 4em 11em;
+
+        .program-list-items {
+          display: flex;
+          flex-direction: column;
+          margin: 0 0.2em;
+          background-color: $myGray700;
+
+          .icon-bar {
+            color: $myLight;
+            font-size: 3rem;
+            padding: 0.3em;
+            text-align: center;
+          }
+
+          h2 {
+            color: $myRedColor;
+            margin: auto 0;
+            text-align: center;
+            padding: 0.3em;
+          }
+
+          p {
+            color: $myLight;
+            padding: 0.3em;
+            text-align: center;
+          }
+        }
+
+        .program-btn {
+          display: none;
+        }
+      }
+
+      .program-btn-desktop {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        width: 20%;
+
+        p {
+          margin: 0 auto;
+          padding: 0 2em;
+
+          a {
+            padding: 0 2em;
+            color: $myLight;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .experts {
+    background-color: #fff;
+
+    .expert-header {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: $myDark;
+        font-family: $myFont;
+        text-align: center;
+        padding-top: 2em;
+      }
+
+      hr {
+        width: 5%;
+        height: 2px;
+        background-color: $myDark;
+        align-self: center;
+        margin-top: 4px;
+      }
+    }
+
+    .expert-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 3em 11em;
+
+      .expert-list-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 1em 0;
+
+        .person {
+          background-image: url(../images/profile-bg.jpg);
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: 4em 4em;
+          padding-top: 20px;
+          padding-left: 20px;
+
+          .front-img {
+            position: relative;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+            img {
+              width: 100%;
+              height: 10em;
+              object-fit: cover;
+              z-index: 2;
+            }
+          }
+        }
+
+        .profile {
+          margin: auto 0;
+          padding: 1em;
+          align-items: left;
+
+          h2 {
+            color: $myDark;
+            font-family: $myFontLato;
+          }
+
+          h3 {
+            margin: 0.75em 0;
+            color: $myRedColor;
+            font-family: $myFontLato;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .experts-btn {
+      display: none;
+    }
+  }
+
+  .partners {
+    background-color: #000;
+    padding-top: 3em;
+
+    .partners-header {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: $myLight;
+        font-family: $myFont;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      hr {
+        width: 10%;
+        height: 1px;
+        background-color: $myRedColor;
+        align-self: center;
+        margin-top: 1em;
+      }
+    }
+
+    .partners-list {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      margin: 4em 11em;
+      padding-bottom: 2em;
+      .partners-list-row-one {
+
+        img {
+          width: 100%;
+        }
+      }
+      .partners-list-row-two {
+
+        img {
+          width: 100%;
+          // align-self: center;
+        }
+      }
+    }
+  }
+
+  .section-footer {
+    background-color: $myLight;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4em;
+    padding: 4em 14em;
+
+    .footer-left {
+      margin: auto 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer-right {
+      margin: auto 0;
+    }
+  }
+
+  /****************************/
+  // Desktop - ABOUT PAGE
+  /****************************/
+
+  .header-text-about {
+    margin: 4em 11em;
+
+    h1 {
+      color: $myRedColor;
+      font-family: $myFont;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+    }
+
+    .border-text-about {
+      border: 2px solid $myGray300;
+      border-radius: 2px;
+      width: 90%;
+      background: #fff;
+      margin: 1em auto;
+
+      p {
+        padding: 0.5em;
+        color: $myDark;
+        font-family: $myFont;
+        text-align: center;
+      }
+    }
+
+    .header-end {
+      margin: 1em auto;
+      padding: 1em 8em;
+
+      p {
+        color: $myDark;
+        text-align: center;
+      }
+    }
+  }
+
+  .about {
+    margin: 4em 14em;
+    padding: 2em 0;
+
+    .about-header {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $myDark;
+        text-align: center;
+      }
+
+      hr {
+        width: 5%;
+        height: 1px;
+        background-color: $myRedColor;
+        align-self: center;
+        margin-top: 1em;
+      }
+
+      p {
+        margin-top: 1em;
+        text-align: center;
+      }
+    }
+
+    .logo-area {
+      padding-top: 1em;
+      margin: 1em auto;
+      width: 50%;
+      border: 0.5px solid $myDark;
+      border-radius: 2px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .samples {
+    margin: 4em 11em;
+    padding: 2em 0;
+
+    .samples-header {
+      display: flex;
+      flex-direction: column;
+      padding: 0 6em;
+
+      h3 {
+        color: $myDark;
+        text-align: center;
+      }
+
+      hr {
+        width: 5%;
+        height: 1px;
+        background-color: $myRedColor;
+        align-self: center;
+        margin-top: 1em;
+      }
+
+      p {
+        margin-top: 1em;
+        text-align: center;
+      }
+    }
+
+    .samples-work {
+      margin: 1em;
+      
+      .samples-work-items {
+        display: flex;
+        flex-direction: row;
+
+        .samples-image-one {
+          background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
+          width: 50%;
+          height: 35vh;
+          background-repeat: no-repeat;
+
+          h2 {
+            color: $myLight;
+            text-align: center;
+            font-size: 2.5rem;
+            padding-top: 2em;
+          }
+
+          p {
+            color: $myLight;
+            text-align: center;
+            padding-bottom: 2em;
+          }
+        }
+
+        .samples-image-two {
+          background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
+          width: 50%;
+          height: 35vh;
+          background-repeat: no-repeat;
+
+          h2 {
+            color: $myLight;
+            text-align: center;
+            font-size: 2.5rem;
+            padding-top: 2em;
+          }
+
+          p {
+            color: $myLight;
+            text-align: center;
+            padding-bottom: 2em;
+          }
+        }
+      }
+    }
+  }
+}
