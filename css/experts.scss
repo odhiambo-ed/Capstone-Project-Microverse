@@ -1,0 +1,187 @@
+$myFont: "Cocogoose", sans-serif;
+$myFontLato: "Lato", sans-serif;
+$myRedColor: #ec5242;
+$myGray700: #495057;
+$myGray300: #d3d3d3;
+$myDark: #272a31;
+$myLight: #f8f9fa;
+$myPfontSize: 1rem;
+$myfontWeight: 400;
+$myLineHeight: 1.5;
+
+.experts {
+    background-color: #fff;
+  
+    .expert-header {
+      display: flex;
+      flex-direction: column;
+  
+      h2 {
+        color: $myDark;
+        font-family: $myFont;
+        text-align: center;
+        padding-top: 20px;
+      }
+  
+      hr {
+        width: 20%;
+        height: 2px;
+        background-color: $myDark;
+        align-self: center;
+        margin-top: 4px;
+      }
+    }
+  
+    .expert-list {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+  
+      .expert-list-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 1em 0;
+  
+        .person {
+          background-image: url(../images/profile-bg.jpg);
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: 4em 4em;
+          padding-top: 20px;
+          padding-left: 20px;
+  
+          .front-img {
+            position: relative;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  
+            img {
+              width: 100%;
+              height: 8em;
+              object-fit: cover;
+              z-index: 2;
+            }
+          }
+        }
+  
+        .profile {
+          margin: auto 0;
+          padding: 1em;
+          align-items: left;
+  
+          h2 {
+            color: $myDark;
+            font-family: $myFontLato;
+          }
+  
+          h3 {
+            margin: 0.75em 0;
+            color: $myRedColor;
+            font-family: $myFontLato;
+          }
+        }
+      }
+    }
+  
+    .experts-btn {
+      margin: 2em 4em;
+  
+      button {
+        font-family: $myFont;
+        color: $myDark;
+        background-color: $myLight;
+        padding: 0.5em 1em;
+        width: 100%;
+        border: 1px solid $myDark;
+        border-radius: 2px;
+        font-size: 15px;
+        box-sizing: border-box;
+  
+        .icon-red {
+          color: $myRedColor;
+        }
+      }
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .experts {
+        background-color: #fff;
+    
+        .expert-header {
+          display: flex;
+          flex-direction: column;
+    
+          h2 {
+            color: $myDark;
+            font-family: $myFont;
+            text-align: center;
+            padding-top: 2em;
+          }
+    
+          hr {
+            width: 5%;
+            height: 2px;
+            background-color: $myDark;
+            align-self: center;
+            margin-top: 4px;
+          }
+        }
+    
+        .expert-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin: 3em 11em;
+    
+          .expert-list-items {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin: 1em 0;
+    
+            .person {
+              background-image: url(../images/profile-bg.jpg);
+              background-repeat: no-repeat;
+              background-position: top left;
+              background-size: 4em 4em;
+              padding-top: 20px;
+              padding-left: 20px;
+    
+              .front-img {
+                position: relative;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    
+                img {
+                  width: 100%;
+                  height: 10em;
+                  object-fit: cover;
+                  z-index: 2;
+                }
+              }
+            }
+    
+            .profile {
+              margin: auto 0;
+              padding: 1em;
+              align-items: left;
+    
+              h2 {
+                color: $myDark;
+                font-family: $myFontLato;
+              }
+    
+              h3 {
+                margin: 0.75em 0;
+                color: $myRedColor;
+                font-family: $myFontLato;
+                font-weight: 200;
+                font-style: italic;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+    
+        .experts-btn {
+          display: none;
+        }
+      }
+}

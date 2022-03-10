@@ -1,0 +1,199 @@
+.experts {
+  background-color: #fff;
+}
+
+.experts .expert-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experts .expert-header h2 {
+  color: #272a31;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.experts .expert-header hr {
+  width: 20%;
+  height: 2px;
+  background-color: #272a31;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 4px;
+}
+
+.experts .expert-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+}
+
+.experts .expert-list .expert-list-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin: 1em 0;
+}
+
+.experts .expert-list .expert-list-items .person {
+  background-image: url(../images/profile-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 4em 4em;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.experts .expert-list .expert-list-items .person .front-img {
+  position: relative;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.experts .expert-list .expert-list-items .person .front-img img {
+  width: 100%;
+  height: 8em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+
+.experts .expert-list .expert-list-items .profile {
+  margin: auto 0;
+  padding: 1em;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.experts .expert-list .expert-list-items .profile h2 {
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+}
+
+.experts .expert-list .expert-list-items .profile h3 {
+  margin: 0.75em 0;
+  color: #ec5242;
+  font-family: "Lato", sans-serif;
+}
+
+.experts .experts-btn {
+  margin: 2em 4em;
+}
+
+.experts .experts-btn button {
+  font-family: "Cocogoose", sans-serif;
+  color: #272a31;
+  background-color: #f8f9fa;
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 1px solid #272a31;
+  border-radius: 2px;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.experts .experts-btn button .icon-red {
+  color: #ec5242;
+}
+
+@media screen and (min-width: 768px) {
+  .experts {
+    background-color: #fff;
+  }
+  .experts .expert-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experts .expert-header h2 {
+    color: #272a31;
+    font-family: "Cocogoose", sans-serif;
+    text-align: center;
+    padding-top: 2em;
+  }
+  .experts .expert-header hr {
+    width: 5%;
+    height: 2px;
+    background-color: #272a31;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 4px;
+  }
+  .experts .expert-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin: 3em 11em;
+  }
+  .experts .expert-list .expert-list-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    margin: 1em 0;
+  }
+  .experts .expert-list .expert-list-items .person {
+    background-image: url(../images/profile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 4em 4em;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .experts .expert-list .expert-list-items .person .front-img {
+    position: relative;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .experts .expert-list .expert-list-items .person .front-img img {
+    width: 100%;
+    height: 10em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 2;
+  }
+  .experts .expert-list .expert-list-items .profile {
+    margin: auto 0;
+    padding: 1em;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .experts .expert-list .expert-list-items .profile h2 {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+  }
+  .experts .expert-list .expert-list-items .profile h3 {
+    margin: 0.75em 0;
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  .experts .experts-btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=experts.css.map */
