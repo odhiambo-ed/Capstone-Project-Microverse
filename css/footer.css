@@ -1,9 +1,7 @@
 .section-footer {
   background-color: #f8f9fa;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 1em;
 }
 
@@ -22,21 +20,21 @@
 @media screen and (min-width: 768px) {
   .section-footer {
     background-color: #f8f9fa;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
     gap: 4em;
     padding: 4em 14em;
   }
+
   .section-footer .footer-left {
     margin: auto 0;
   }
+
   .section-footer .footer-left img {
     width: 100%;
   }
+
   .section-footer .footer-right {
     margin: auto 0;
   }
 }
-/*# sourceMappingURL=footer.css.map */

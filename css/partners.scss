@@ -10,19 +10,75 @@ $myfontWeight: 400;
 $myLineHeight: 1.5;
 
 .partners {
+  background-color: #000;
+
+  .partners-header {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: $myLight;
+      font-family: $myFont;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    hr {
+      width: 10%;
+      height: 1px;
+      background-color: $myRedColor;
+      align-self: center;
+      margin-top: 1em;
+    }
+  }
+
+  .partners-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 1em 1em 0 1em;
+    padding-bottom: 2em;
+
+    .partners-list-row-one {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1em;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .partners-list-row-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      margin: 0 auto;
+      width: 60%;
+
+      img {
+        width: 100%;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .partners {
     background-color: #000;
-  
+    padding-top: 3em;
+
     .partners-header {
       display: flex;
       flex-direction: column;
-  
+
       h2 {
         color: $myLight;
         font-family: $myFont;
         text-align: center;
         padding-top: 20px;
       }
-  
+
       hr {
         width: 10%;
         height: 1px;
@@ -31,81 +87,25 @@ $myLineHeight: 1.5;
         margin-top: 1em;
       }
     }
-  
+
     .partners-list {
       display: grid;
-      grid-template-rows: 1fr 1fr;
-      margin: 1em 1em 0 1em;
+      grid-template-columns: 3fr 2fr;
+      margin: 4em 11em;
       padding-bottom: 2em;
-  
+
       .partners-list-row-one {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-  
         img {
           width: 100%;
         }
       }
-  
+
       .partners-list-row-two {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-        margin: 0 auto;
-        width: 60%;
-  
         img {
           width: 100%;
-          align-self: center;
+          // align-self: center;
         }
       }
     }
   }
-
-  @media screen and (min-width: 768px) {
-    .partners {
-        background-color: #000;
-        padding-top: 3em;
-    
-        .partners-header {
-          display: flex;
-          flex-direction: column;
-    
-          h2 {
-            color: $myLight;
-            font-family: $myFont;
-            text-align: center;
-            padding-top: 20px;
-          }
-    
-          hr {
-            width: 10%;
-            height: 1px;
-            background-color: $myRedColor;
-            align-self: center;
-            margin-top: 1em;
-          }
-        }
-    
-        .partners-list {
-          display: grid;
-          grid-template-columns: 3fr 2fr;
-          margin: 4em 11em;
-          padding-bottom: 2em;
-          .partners-list-row-one {
-    
-            img {
-              width: 100%;
-            }
-          }
-          .partners-list-row-two {
-    
-            img {
-              width: 100%;
-              // align-self: center;
-            }
-          }
-        }
-      }
-  }
+}

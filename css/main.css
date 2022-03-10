@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap");
+
 * {
   margin: 0;
 }
@@ -68,13 +69,10 @@ p {
 }
 
 .header-container .mobile-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 3em auto;
   padding: 0 2em;
 }
@@ -156,113 +154,110 @@ p {
     position: relative;
     padding-bottom: 2em;
   }
+
   .header-container .social {
     background-color: #272a31;
     display: block;
   }
+
   .header-container .social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
     padding: 0.3em 7em 0.3em 0;
   }
+
   .header-container .social ul li {
     padding: 0 0.75em;
     list-style: none;
   }
+
   .header-container .social ul li a {
     color: #f8f9fa;
     text-decoration: none;
     font-family: "Lato", sans-serif;
     cursor: pointer;
   }
+
   .header-container .social ul li:hover {
     -webkit-transform: translateX(2px);
-            transform: translateX(2px);
+    transform: translateX(2px);
   }
+
   .header-container .navbar {
     height: 6em;
     background-color: #fff;
-    display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
+
   .header-container .navbar .hamburger {
     display: none;
   }
+
   .header-container .navbar .logo {
     display: block;
     width: 12em;
     padding-left: 6em;
   }
+
   .header-container .navbar .logo a img {
     width: 100%;
   }
+
   .header-container .navbar .logo a img:hover {
     -webkit-transform: translateX(4px);
-            transform: translateX(4px);
+    transform: translateX(4px);
   }
+
   .header-container .navbar .desktop-nav {
     display: block;
   }
+
   .header-container .navbar .desktop-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
     padding-right: 7em;
   }
+
   .header-container .navbar .desktop-nav ul li {
     padding: 2em 1em;
     list-style: none;
   }
+
   .header-container .navbar .desktop-nav ul li a {
     color: #272a31;
     text-decoration: none;
     font-family: "Lato", sans-serif;
     cursor: pointer;
   }
+
   .header-container .navbar .desktop-nav ul li a:hover {
     color: #ec5242;
   }
+
   .header-container .navbar .desktop-nav ul li .nav-btn {
     border: 2px solid #ec5242;
     padding: 1em 2em;
     color: #ec5242;
   }
+
   .header-container .header-text {
     margin: 5em 9em;
     padding-right: 16em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    flex-direction: column;
+    justify-content: left;
   }
+
   .header-container .header-text h3 {
     color: #ec5242;
     font-family: "Cocogoose", sans-serif;
     text-align: left;
   }
+
   .header-container .header-text h1 {
     color: #ec5242;
     font-family: "Cocogoose", sans-serif;
@@ -273,6 +268,7 @@ p {
     padding-top: 0.75em;
     padding-bottom: 0.75em;
   }
+
   .header-container .header-text .border-text {
     border: 2px solid #fff;
     border-radius: 2px;
@@ -281,23 +277,26 @@ p {
     margin: auto 0;
     padding-top: 1em;
   }
+
   .header-container .header-text .border-text p {
     padding: 0.5em;
     color: #495057;
     font-family: "Cocogoose", sans-serif;
   }
+
   .header-container .header-text .header-date {
     margin-top: 1em;
   }
+
   .header-container .header-text .header-date h2 {
     color: #495057;
     font-family: "Cocogoose", sans-serif;
     font-weight: bold;
   }
+
   .header-container .header-text .header-date p {
     padding-top: 1em;
     color: #495057;
     text-align: left;
   }
 }
-/*# sourceMappingURL=main.css.map */

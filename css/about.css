@@ -47,13 +47,8 @@
 }
 
 .about .about-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .about .about-header h3 {
@@ -65,9 +60,7 @@
   width: 5%;
   height: 1px;
   background-color: #ec5242;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 1em;
 }
 
@@ -93,13 +86,8 @@
 }
 
 .samples .samples-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .samples .samples-header h3 {
@@ -111,9 +99,7 @@
   width: 5%;
   height: 1px;
   background-color: #ec5242;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 1em;
 }
 
@@ -127,16 +113,24 @@
 }
 
 .samples .samples-work .samples-work-items {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1em;
 }
 
 .samples .samples-work .samples-work-items .samples-image-one {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample1.jpg);
-  background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
+  background:
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(128, 0, 0, 0.5)),
+      to(rgba(128, 0, 0, 0.6))
+    ),
+    url(../images/sample1.jpg);
+  background:
+    linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+    url(../images/sample1.jpg);
   width: 100%;
   height: 35vh;
   background-repeat: no-repeat;
@@ -156,8 +150,18 @@
 }
 
 .samples .samples-work .samples-work-items .samples-image-two {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample2.jpg);
-  background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
+  background:
+    -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(128, 0, 0, 0.5)),
+      to(rgba(128, 0, 0, 0.6))
+    ),
+    url(../images/sample2.jpg);
+  background:
+    linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+    url(../images/sample2.jpg);
   width: 100%;
   height: 35vh;
   background-repeat: no-repeat;
@@ -176,11 +180,12 @@
   padding-bottom: 2em;
 }
 
-/******************************/
+/*****************************   */
 @media screen and (min-width: 768px) {
   .header-text-about {
     margin: 4em 11em;
   }
+
   .header-text-about h1 {
     color: #ec5242;
     font-family: "Cocogoose", sans-serif;
@@ -191,6 +196,7 @@
     padding-top: 0.75em;
     padding-bottom: 0.75em;
   }
+
   .header-text-about .border-text-about {
     border: 2px solid #d3d3d3;
     border-radius: 2px;
@@ -198,50 +204,52 @@
     background: #fff;
     margin: 1em auto;
   }
+
   .header-text-about .border-text-about p {
     padding: 0.5em;
     color: #272a31;
     font-family: "Cocogoose", sans-serif;
     text-align: center;
   }
+
   .header-text-about .header-end {
     margin: 1em auto;
     padding: 1em 8em;
   }
+
   .header-text-about .header-end p {
     color: #272a31;
     text-align: center;
   }
+
   .about {
     margin: 4em 14em;
     padding: 2em 0;
   }
+
   .about .about-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .about .about-header h3 {
     color: #272a31;
     text-align: center;
   }
+
   .about .about-header hr {
     width: 5%;
     height: 1px;
     background-color: #ec5242;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin-top: 1em;
   }
+
   .about .about-header p {
     margin-top: 1em;
     text-align: center;
   }
+
   .about .logo-area {
     padding-top: 1em;
     margin: 1em auto;
@@ -249,87 +257,108 @@
     border: 0.5px solid #272a31;
     border-radius: 2px;
   }
+
   .about .logo-area img {
     width: 100%;
   }
+
   .samples {
     margin: 4em 11em;
     padding: 2em 0;
   }
+
   .samples .samples-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0 6em;
   }
+
   .samples .samples-header h3 {
     color: #272a31;
     text-align: center;
   }
+
   .samples .samples-header hr {
     width: 5%;
     height: 1px;
     background-color: #ec5242;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin-top: 1em;
   }
+
   .samples .samples-header p {
     margin-top: 1em;
     text-align: center;
   }
+
   .samples .samples-work {
     margin: 1em;
   }
+
   .samples .samples-work .samples-work-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   .samples .samples-work .samples-work-items .samples-image-one {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample1.jpg);
-    background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample1.jpg);
+    background:
+      -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(128, 0, 0, 0.5)),
+        to(rgba(128, 0, 0, 0.6))
+      ),
+      url(../images/sample1.jpg);
+    background:
+      linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+      url(../images/sample1.jpg);
     width: 50%;
     height: 35vh;
     background-repeat: no-repeat;
   }
+
   .samples .samples-work .samples-work-items .samples-image-one h2 {
     color: #f8f9fa;
     text-align: center;
     font-size: 2.5rem;
     padding-top: 2em;
   }
+
   .samples .samples-work .samples-work-items .samples-image-one p {
     color: #f8f9fa;
     text-align: center;
     padding-bottom: 2em;
   }
+
   .samples .samples-work .samples-work-items .samples-image-two {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 0, 0, 0.5)), to(rgba(128, 0, 0, 0.6))), url(../images/sample2.jpg);
-    background: linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)), url(../images/sample2.jpg);
+    background:
+      -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(128, 0, 0, 0.5)),
+        to(rgba(128, 0, 0, 0.6))
+      ),
+      url(../images/sample2.jpg);
+    background:
+      linear-gradient(rgba(128, 0, 0, 0.5), rgba(128, 0, 0, 0.6)),
+      url(../images/sample2.jpg);
     width: 50%;
     height: 35vh;
     background-repeat: no-repeat;
   }
+
   .samples .samples-work .samples-work-items .samples-image-two h2 {
     color: #f8f9fa;
     text-align: center;
     font-size: 2.5rem;
     padding-top: 2em;
   }
+
   .samples .samples-work .samples-work-items .samples-image-two p {
     color: #f8f9fa;
     text-align: center;
     padding-bottom: 2em;
   }
 }
-/*# sourceMappingURL=about.css.map */

@@ -40,11 +40,12 @@ p {
   .navbar {
     height: 50px;
 
-    .hamburger {      
+    .hamburger {
       margin: 0 12px;
 
       a {
         cursor: pointer;
+
         .icon-bar {
           width: 40px;
           height: 40px;
@@ -137,6 +138,7 @@ p {
 
     .header-date {
       margin: 10px;
+
       h2 {
         color: $myGray700;
         font-family: $myFont;
