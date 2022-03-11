@@ -7,11 +7,12 @@
 html,
 body {
   width: 100%;
+
   /* margin: 0 auto; */
 }
 
 p {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
 
 .header-container {
