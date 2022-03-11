@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .partners {
-    background-color: #000;
+    background-color: #272a31;
     padding-top: 3em;
   }
 
@@ -75,7 +75,7 @@
     height: 1px;
     background-color: #ec5242;
     align-self: center;
-    margin-top: 1em;
+    margin: 1em 0;
   }
 
   .partners .partners-list {
