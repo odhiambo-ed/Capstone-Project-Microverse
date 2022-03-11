@@ -24,7 +24,7 @@
 
 .partners .partners-list {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   margin: 1em 1em 0 1em;
   padding-bottom: 2em;
 }
@@ -81,7 +81,7 @@
   .partners .partners-list {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    margin: 4em 11em;
+    margin: 0 11em;
     padding-bottom: 2em;
   }
 

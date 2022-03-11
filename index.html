@@ -14,73 +14,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>iDreality</title>
 </head>
 
 <body>
-  <header class="header-container">
-    <nav class="social">
-      <ul>
-        <li>
-          <a href="https://twitter.com/odhiambo_ed"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/edward-odhiambo-6a462a21b/"><i class="fa-brands fa-linkedin"
-             ></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/white3d"><i class="fa-brands fa-github"></i></a>
-        </li>
-        <li><a href="">English</a></li>
-        <li><a href="">French</a></li>
-      </ul>
-    </nav>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="./images/logo.png" alt="IDREALITY" /></a>
-      </div>
-      <div class="hamburger">
-        <a href="#"><img class="icon-bar" src="./images/hamburger.png" alt="Icon" /></a>
-      </div>
-      <div class="desktop-nav">
+  <div class="header-container">
+    <header>
+      <nav class="social">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a class="nav-btn" href="#">Share Your Mind</a></li>
+          <li>
+            <a href="https://twitter.com/odhiambo_ed"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/edward-odhiambo-6a462a21b/"><i class="fa-brands fa-linkedin"
+               ></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/white3d"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li><a href="">English</a></li>
+          <li><a href="">French</a></li>
         </ul>
+      </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="IDREALITY" /></a>
+        </div>
+        <div class="hamburger">
+          <a href="#"><img class="icon-bar" src="./images/hamburger.png" alt="Icon" /></a>
+        </div>
+        <div class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a class="nav-btn" href="#">Share Your Mind</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="mobile-nav" class="mobile-nav">
+        <span class="mobile-close"><i class="fas fa-times"></i></span>
+        <ul>
+          <li><a href="index.html" onclick="menuLink()">Home</a></li>
+          <li><a href="about.html" onclick="menuLink()">About</a></li>
+          <li><a href="#" onclick="menuLink()">Blog</a></li>
+          <li><a class="nav-btn" href="#" onclick="menuLink()">Share Your Mind</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="header-text">
+        <h3>Hi! You want your ideas turned to reality?</h3>
+        <h1>
+          Idreality is all you need. You've just gotten all you need at one
+          stop.
+        </h1>
+        <div class="border-text">
+          <p>
+            Idreality is an innovation and life coaching hub, a digital platform
+            that provides solutions to the ideas that have not been birthed,
+            taking them from incubation to execution. It is a free online space
+            to accommodate the youth and their ideas, and walk them towards
+            realization of their potential.
+          </p>
+        </div>
+        <div class="header-date">
+          <h2>~iDreality! Where the ideas come to realization~</h2>
+          <p>@iHub Kenya, Caren Shopping Centre.</p>
+        </div>
       </div>
-    </nav>
-    <nav id="mobile-nav" class="mobile-nav">
-      <span class="mobile-close"><i class="fas fa-times"></i></span>
-      <ul>
-        <li><a href="index.html" onclick="menuLink()">Home</a></li>
-        <li><a href="about.html" onclick="menuLink()">About</a></li>
-        <li><a href="#" onclick="menuLink()">Blog</a></li>
-        <li><a class="nav-btn" href="#" onclick="menuLink()">Share Your Mind</a></li>
-      </ul>
-    </nav>
-    <div class="header-text">
-      <h3>Hi! You want your ideas turned to reality?</h3>
-      <h1>
-        Idreality is all you need. You've just gotten all you need at one
-        stop.
-      </h1>
-      <div class="border-text">
-        <p>
-          Idreality is an innovation and life coaching hub, a digital platform
-          that provides solutions to the ideas that have not been birthed,
-          taking them from incubation to execution. It is a free online space
-          to accommodate the youth and their ideas, and walk them towards
-          realization of their potential.
-        </p>
-      </div>
-      <div class="header-date">
-        <h2>~iDreality! Where the ideas come to realization~</h2>
-        <p>@iHub Kenya, Caren Shopping Centre.</p>
-      </div>
-    </div>
-  </header>
+    </main>
+  </div>
   <section class="our-program">
     <div class="program">
       <div class="program-header">
@@ -173,7 +177,7 @@
     </div>
 
     <div class="footer-right">
-      <p>&amp;copy iDreality.com</p>
+      <p>&copy; copy iDreality.com</p>
       <p>All Rights Reserved.</p>
     </div>
   </footer>

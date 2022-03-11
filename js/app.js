@@ -102,7 +102,7 @@ window.addEventListener('load', () => {
     }
   };
 
-  if (document.querySelector('.expert-list') !== undefined) {
+  if (document.querySelector('.expert-list') != null) {
     const showMoreButton = () => {
       const width = window.innerWidth;
 
@@ -135,18 +135,18 @@ window.addEventListener('load', () => {
 
     showMoreButton();
   }
+});
 
-  document
-    .querySelector('.mobile-close')
-    .addEventListener('click', () => {
-      document.querySelector('#mobile-nav').style.display = 'none';
-      document.querySelector('.hamburger').style.display = 'block';
-    });
-
-  document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('#mobile-nav').style.display = 'block';
-    document.querySelector('.hamburger').style.display = 'none';
+document
+  .querySelector('.mobile-close')
+  .addEventListener('click', () => {
+    document.querySelector('#mobile-nav').style.display = 'none';
+    document.querySelector('.hamburger').style.display = 'block';
   });
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+  document.querySelector('#mobile-nav').style.display = 'block';
+  document.querySelector('.hamburger').style.display = 'none';
 });
 
 function menuLink() {

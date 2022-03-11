@@ -50,7 +50,6 @@
 
 .experts .expert-list .expert-list-items .person .front-img img {
   width: 100%;
-  height: 8em;
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 2;
@@ -64,12 +63,21 @@
 .experts .expert-list .expert-list-items .profile h2 {
   color: #272a31;
   font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
 }
 
 .experts .expert-list .expert-list-items .profile h3 {
   margin: 0.75em 0;
   color: #ec5242;
   font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
+}
+
+.experts .expert-list .expert-list-items .profile p {
+  margin: 0.75em 0;
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+  font-size: 0.6rem;
 }
 
 .experts .experts-btn {
@@ -151,25 +159,37 @@
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 2;
+    min-width: 128px;
   }
 
   .experts .expert-list .expert-list-items .profile {
     margin: auto 0;
     padding: 1em;
+    min-width: 264px;
   }
 
   .experts .expert-list .expert-list-items .profile h2 {
     color: #272a31;
     font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
   }
 
   .experts .expert-list .expert-list-items .profile h3 {
     margin: 0.75em 0;
     color: #ec5242;
     font-family: "Lato", sans-serif;
-    font-weight: 200;
+    font-size: 0.9rem;
+    font-weight: 300;
     font-style: italic;
-    font-size: 1rem;
+  }
+
+  .experts .expert-list .expert-list-items .profile p {
+    margin: 0.75em 0;
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
   }
 
   .experts .experts-btn {

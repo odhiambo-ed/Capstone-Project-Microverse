@@ -42,6 +42,7 @@
   grid-template-columns: 1fr 1fr 2fr;
   margin: 0.2em 0;
   background-color: #495057;
+  width: 100%;
 }
 
 .our-program .program .program-list .program-list-items .icon-bar {
@@ -55,6 +56,8 @@
   margin: auto 0;
   text-align: left;
   padding: 0.3em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
 }
 
 .our-program .program .program-btn-desktop p {
@@ -64,8 +67,11 @@
 
 .our-program .program .program-list .program-list-items p {
   color: #f8f9fa;
-  padding: 0.3em;
+  padding: 0.5em;
   text-align: left;
+  min-width: 170px;
+  font-size: 0.7rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .our-program .program .program-list .program-btn {
@@ -86,7 +92,7 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .our-program {
     background-color: #272a31;
   }
@@ -123,11 +129,11 @@
   }
 
   .our-program .program .program-list {
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    margin: 4em 11em;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    gap: 0.2em;
+    justify-content: center;
+    margin: 4em 0;
   }
 
   .our-program .program .program-list .program-list-items {
@@ -149,12 +155,14 @@
     margin: auto 0;
     text-align: center;
     padding: 0.3em;
+    font-size: 1.2rem;
   }
 
   .our-program .program .program-list .program-list-items p {
     color: #f8f9fa;
     padding: 0.3em;
     text-align: center;
+    font-size: 1rem;
   }
 
   .our-program .program .program-list .program-btn {
@@ -163,14 +171,15 @@
 
   .our-program .program .program-btn-desktop {
     display: block;
-    margin: 0 auto;
     padding-bottom: 2em;
-    width: 20%;
+    text-align: center;
   }
 
   .our-program .program .program-btn-desktop p a {
     padding: 0 2em;
     color: #f8f9fa;
     text-align: center;
+
+
   }
 }
