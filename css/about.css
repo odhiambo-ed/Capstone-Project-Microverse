@@ -194,6 +194,7 @@
   .header-text-about h1 {
     color: #ec5242;
     font-family: "Cocogoose", sans-serif;
+    letter-spacing: -2px;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
