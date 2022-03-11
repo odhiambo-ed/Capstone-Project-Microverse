@@ -1,0 +1,292 @@
+.experts {
+  background-color: #fff;
+}
+
+.experts .expert-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.experts .expert-header h2 {
+  color: #272a31;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.experts .expert-header hr {
+  width: 20%;
+  height: 2px;
+  background-color: #272a31;
+  align-self: center;
+  margin-top: 4px;
+}
+
+.experts .expert-list {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.experts .expert-list .expert-list-items {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1em 0;
+}
+
+.experts .expert-list .expert-list-items .person {
+  background-image: url(../images/profile-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 4em 4em;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.experts .expert-list .expert-list-items .person .front-img {
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.experts .expert-list .expert-list-items .person .front-img img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.experts .expert-list .expert-list-items .profile {
+  margin: auto 0;
+  padding: 1em;
+}
+
+.experts .expert-list .expert-list-items .profile h2 {
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+}
+
+.experts .expert-list .expert-list-items .profile h3 {
+  margin: 0.75em 0;
+  color: #ec5242;
+  font-family: "Lato", sans-serif;
+  font-size: 0.6rem;
+}
+
+.experts .expert-list .expert-list-items .profile p {
+  margin: 0.75em 0;
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
+}
+
+.experts .experts-btn {
+  margin: 2em 4em;
+}
+
+.experts .experts-btn button {
+  font-family: "Cocogoose", sans-serif;
+  color: #272a31;
+  background-color: #f8f9fa;
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 1px solid #272a31;
+  border-radius: 2px;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.experts .experts-btn button .icon-red {
+  color: #ec5242;
+}
+
+@media screen and (min-width: 776px) and (max-width: 1060px) {
+  .experts {
+    background-color: #fff;
+  }
+
+  .experts .expert-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experts .expert-header h2 {
+    color: #272a31;
+    font-family: "Cocogoose", sans-serif;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .experts .expert-header hr {
+    width: 5%;
+    height: 2px;
+    background-color: #272a31;
+    align-self: center;
+    margin-top: 4px;
+  }
+
+  .experts .expert-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em 4em;
+  }
+
+  .experts .expert-list .expert-list-items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1em 0;
+  }
+
+  .experts .expert-list .expert-list-items .person {
+    background-image: url(../images/profile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 4em 4em;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .experts .expert-list .expert-list-items .person .front-img {
+    position: relative;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .experts .expert-list .expert-list-items .person .front-img img {
+    width: 100%;
+    height: 10em;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 2;
+    min-width: 128px;
+  }
+
+  .experts .expert-list .expert-list-items .profile {
+    margin: auto 0;
+    padding: 1em;
+  }
+
+  .experts .expert-list .expert-list-items .profile h2 {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .experts .expert-list .expert-list-items .profile h3 {
+    margin: 0.75em 0;
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .experts .expert-list .expert-list-items .profile p {
+    margin: 0.75em 0;
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .experts .experts-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .experts {
+    background-color: #fff;
+  }
+
+  .experts .expert-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experts .expert-header h2 {
+    color: #272a31;
+    font-family: "Cocogoose", sans-serif;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .experts .expert-header hr {
+    width: 5%;
+    height: 2px;
+    background-color: #272a31;
+    align-self: center;
+    margin-top: 4px;
+  }
+
+  .experts .expert-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em 11em;
+  }
+
+  .experts .expert-list .expert-list-items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1em 0;
+  }
+
+  .experts .expert-list .expert-list-items .person {
+    background-image: url(../images/profile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 4em 4em;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .experts .expert-list .expert-list-items .person .front-img {
+    position: relative;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .experts .expert-list .expert-list-items .person .front-img img {
+    width: 100%;
+    height: 10em;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 2;
+    min-width: 128px;
+  }
+
+  .experts .expert-list .expert-list-items .profile {
+    margin: auto 0;
+    padding: 1em;
+  }
+
+  .experts .expert-list .expert-list-items .profile h2 {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .experts .expert-list .expert-list-items .profile h3 {
+    margin: 0.75em 0;
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .experts .expert-list .expert-list-items .profile p {
+    margin: 0.75em 0;
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .experts .experts-btn {
+    display: none;
+  }
+}

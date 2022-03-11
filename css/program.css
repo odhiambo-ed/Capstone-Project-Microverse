@@ -1,0 +1,183 @@
+.our-program {
+  background-color: #272a31;
+}
+
+.our-program .program {
+  background-image: url("../images/bg2.png");
+  background-color: $mydark;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.our-program .program .program-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-program .program .program-header h2 {
+  color: #f8f9fa;
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.our-program .program .program-header hr {
+  width: 20%;
+  height: 2px;
+  background-color: #ec5242;
+  align-self: center;
+}
+
+.our-program .program .program-list {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.our-program .program .program-list .program-list-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin: 0.2em 0;
+  background-color: #495057;
+  width: 100%;
+}
+
+.our-program .program .program-list .program-list-items .icon-bar {
+  color: #f8f9fa;
+  font-size: 3rem;
+  padding: 0.3em;
+}
+
+.our-program .program .program-list .program-list-items h2 {
+  color: #ec5242;
+  margin: auto 0;
+  text-align: left;
+  padding: 0.3em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.our-program .program .program-btn-desktop p {
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.our-program .program .program-list .program-list-items p {
+  color: #f8f9fa;
+  padding: 0.5em;
+  text-align: left;
+  min-width: 170px;
+  font-size: 0.7rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.our-program .program .program-list .program-btn {
+  margin: 2em auto;
+}
+
+.our-program .program .program-list .program-btn button {
+  font-family: "Cocogoose", sans-serif;
+  color: #f8f9fa;
+  background-color: #ec5242;
+  padding: 1em 3em;
+  border: 0;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.our-program .program .program-btn-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .our-program {
+    background-color: #272a31;
+  }
+
+  .our-program .program {
+    background-image: url("../images/bg2.png");
+    background-color: $mydark;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+
+  .our-program .program .program-header {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .our-program .program .program-header h2 {
+    color: #f8f9fa;
+    font-family: "Cocogoose", sans-serif;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+  }
+
+  .our-program .program .program-header hr {
+    width: 5%;
+    height: 1px;
+    background-color: #ec5242;
+    align-self: center;
+  }
+
+  .our-program .program .program-list {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    gap: 0.2em;
+    justify-content: center;
+    margin: 4em 0;
+  }
+
+  .our-program .program .program-list .program-list-items {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.2em;
+    background-color: #495057;
+  }
+
+  .our-program .program .program-list .program-list-items .icon-bar {
+    color: #f8f9fa;
+    font-size: 3rem;
+    padding: 0.3em;
+    text-align: center;
+  }
+
+  .our-program .program .program-list .program-list-items h2 {
+    color: #ec5242;
+    margin: auto 0;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 1.2rem;
+  }
+
+  .our-program .program .program-list .program-list-items p {
+    color: #f8f9fa;
+    padding: 0.3em;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .our-program .program .program-list .program-btn {
+    display: none;
+  }
+
+  .our-program .program .program-btn-desktop {
+    display: block;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+  .our-program .program .program-btn-desktop p a {
+    padding: 0 2em;
+    color: #f8f9fa;
+    text-align: center;
+  }
+}
